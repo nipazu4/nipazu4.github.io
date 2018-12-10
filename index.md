@@ -17,12 +17,12 @@
         </div>
         
         <div class="iframe-container">
-            <iframe id="Ajankohtaista" class="iframe"></iframe>
-            <iframe id="Ryhmat" class="iframe"></iframe>
-            <iframe id="Imdigiry" class="iframe"></iframe>
-            <iframe id="Jaseneksi" class="iframe"></iframe>
-            <iframe id="Yhteystiedot" class="iframe"></iframe>
-            <iframe id="Mahdollistajat" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
+            <iframe id="" class="iframe"></iframe>
         </div>
     </div>
 </body>

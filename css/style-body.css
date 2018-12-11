@@ -50,14 +50,14 @@ button:focus {
     outline:none;
 }
 
-.iframe-container {
+.container {
     margin:0;
     flex: 1;
     padding: calc(var(--vh, 1vh) * 2);
     order: 1;
 }
 
-.iframe-container iframe {
+.container content-div {
     border:none;
     height: calc(var(--vh, 1vh) * 80);
     width: 100%;
@@ -108,11 +108,11 @@ button:focus {
         margin-top:calc(var(--vh, 1vh) * 2);
     }
     
-    .iframe-container {
+    .container {
         order: 2;
     }
     
-    .iframe-container iframe {
+    .container div {
         height: calc(var(--vh, 1vh) * 92);
         width: calc(var(--vh, 1vh) * 65);
     }

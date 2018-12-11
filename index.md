@@ -6,6 +6,7 @@
 </head>
 <body>
     <div class="content">
+        <div class="header"></div>
         <div class="tab">
             <button class="tablinks" onclick="openTab(event, '')" id="defaultOpen">button 1</button>
             <button class="tablinks" onclick="openTab(event, '')">button 2</button>

@@ -1,7 +1,6 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
     <title></title>
-    <script src="/scripts/viewport-height.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/style-body.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
 </head>

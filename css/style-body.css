@@ -14,9 +14,14 @@ body {
 
 @media only screen and (max-width: 1023px) {
 	.content {
+		width: 1000px;
+		min-height: 100%
+	}
+	
+	.header {
 		
 	}
-
+	
 	.tab {
 		
 	}

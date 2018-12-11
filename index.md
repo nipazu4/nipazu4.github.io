@@ -16,13 +16,8 @@
             <button class="tablinks" onclick="openTab(event, '')">button 6</button>
         </div>
         
-        <div class="iframe-container">
-            <iframe id="" class="iframe"></iframe>
-            <iframe id="" class="iframe"></iframe>
-            <iframe id="" class="iframe"></iframe>
-            <iframe id="" class="iframe"></iframe>
-            <iframe id="" class="iframe"></iframe>
-            <iframe id="" class="iframe"></iframe>
+        <div class="container">
+            <div id="" class="content-div"></div>
         </div>
     </div>
 </body>

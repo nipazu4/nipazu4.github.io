@@ -11,8 +11,6 @@
             <button class="tablinks" onclick="openTab(event, '')">button 2</button>
             <button class="tablinks" onclick="openTab(event, '')">button 3</button>
             <button class="tablinks" onclick="openTab(event, '')">button 4</button>
-            <button class="tablinks" onclick="openTab(event, '')">button 5</button>
-            <button class="tablinks" onclick="openTab(event, '')">button 6</button>
         </div>
         
         <div class="container">

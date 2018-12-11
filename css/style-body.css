@@ -15,12 +15,14 @@ body {
 	.content {
 		width: 80%;
 		min-height: 100%;
+		margin: auto;
 	}
 	
 	#navbar {
 		position: fixed;
 		width: 100%;
 		height: auto;
+		margin: auto;
 	}
 	
 	.header {

@@ -23,3 +23,4 @@
 </body>
 </html>
 <script src="/scripts/tabchooser.js"></script>
+<script src="/scripts/menu-hider.js"></script>

@@ -21,7 +21,6 @@ body {
 	}
 	
 	#navbar {
-		position: relative;
 		width: 100%;
 		height: auto;
 	}
@@ -46,6 +45,7 @@ body {
 
 	.tab button {
 		height: 100%;
+		margin: 0;
 	}
 
 	.tab button:focus {

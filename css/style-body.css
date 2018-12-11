@@ -20,7 +20,7 @@ body {
 		margin: auto;
 	}
 	
-	#navbar {
+	#content #navbar {
 		position: fixed;
 		width: 100%;
 		height: auto;

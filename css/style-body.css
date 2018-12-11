@@ -21,10 +21,9 @@ body {
 	}
 	
 	#navbar {
-		position: fixed;
+		position: relative;
 		width: 100%;
 		height: auto;
-		margin: auto;
 	}
 	
 	.header {
@@ -45,15 +44,15 @@ body {
 		
 	}
 
-	button {
-		
+	.tab button {
+		height: 100%;
 	}
 
-	button:focus {
+	.tab button:focus {
 	    outline:none;
 	}
 
-	.container {
+	#container {
 		
 	}
 

@@ -20,7 +20,7 @@ body {
 		margin: auto;
 	}
 	
-	#content #navbar {
+	#navbar {
 		position: fixed;
 		width: 100%;
 		height: auto;
@@ -29,13 +29,11 @@ body {
 	
 	.header {
 		height: 80px;
-		width: 100%;
 		background: #fff;
 	}
 	
 	.tab {
 		height: 30px;
-		width: 100%;
 		background: #fff;
 	}
 

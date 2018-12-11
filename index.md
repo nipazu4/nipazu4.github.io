@@ -6,12 +6,14 @@
 </head>
 <body>
     <div class="content">
-        <div class="header"></div>
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, '')" id="defaultOpen">button 1</button>
-            <button class="tablinks" onclick="openTab(event, '')">button 2</button>
-            <button class="tablinks" onclick="openTab(event, '')">button 3</button>
-            <button class="tablinks" onclick="openTab(event, '')">button 4</button>
+        <div id="navbar">
+            <div class="header"></div>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, '')" id="defaultOpen">button 1</button>
+                <button class="tablinks" onclick="openTab(event, '')">button 2</button>
+                <button class="tablinks" onclick="openTab(event, '')">button 3</button>
+                <button class="tablinks" onclick="openTab(event, '')">button 4</button>
+            </div>
         </div>
         
         <div class="container">

@@ -12,10 +12,10 @@ body {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
 	#content {
 		position: relative;
-		width: 80%;
+		width: 70%;
 		height: 100%;
 		margin: auto;
 	}

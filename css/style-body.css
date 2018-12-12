@@ -81,6 +81,7 @@ body {
 
 	#column-1 {
 		width: auto;
+		float: left;
 	}
 	
 	#column-2 {

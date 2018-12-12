@@ -39,7 +39,8 @@ body {
 }
 
 .tablinks {
-
+	margin: 0;
+	padding: 0;
 }
 
 .tab button {

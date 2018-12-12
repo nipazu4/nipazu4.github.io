@@ -59,10 +59,12 @@ body {
 
 #column-1 {
 	margin: 8px;
+	width: 100%;
 }
 
 #column-2 {
 	margin: 8px;
+	width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -72,6 +74,10 @@ body {
 	#content {
 		width: 90%;
 	}
+	
+	#column-1 {
+	width: 180px;
+}
 }
 
 @media only screen and (min-width: 1200px) {

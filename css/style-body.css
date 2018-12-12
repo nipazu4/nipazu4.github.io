@@ -63,16 +63,19 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
+	#content {
+		width: 90%;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
 	#content {
-			width: 80%;
+		width: 80%;
 	}
 }
 
 @media only screen and (min-width: 1800px) {
 	#content {
-			width: 60%;
+		width: 50%;
 	}
 }

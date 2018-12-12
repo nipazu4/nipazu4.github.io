@@ -55,6 +55,7 @@ body {
 #container {
 	height: 3000px;
 	padding: 8px;
+	display: flex;
 }
 
 #column-1 {

@@ -11,14 +11,17 @@
         <div id="navbar">
             <div class="header"></div>
             <div class="tab">
-                <button class="tablinks" onclick="openTab(event, '')" id="defaultOpen">button 1</button>
-                <button class="tablinks" onclick="openTab(event, '')">button 2</button>
-                <button class="tablinks" onclick="openTab(event, '')">button 3</button>
-                <button class="tablinks" onclick="openTab(event, '')">button 4</button>
+                <button class="tablinks" onclick="openTab(event, 'page1')" id="defaultOpen">button 1</button>
+                <button class="tablinks" onclick="openTab(event, 'page2')">button 2</button>
+                <button class="tablinks" onclick="openTab(event, 'page3')">button 3</button>
+                <button class="tablinks" onclick="openTab(event, 'page4')">button 4</button>
             </div>
         </div>
 		<div id="container">
-			<div id="column-1"></div>
+			<div class="column-1" id="page1" id="defaultOpen"></div>
+			<div class="column-1" id="page2"></div>
+			<div class="column-1" id="page3"></div>
+			<div class="column-1" id="page4"></div>
 			<div id="column-2"></div>
 		</div>
     </div>

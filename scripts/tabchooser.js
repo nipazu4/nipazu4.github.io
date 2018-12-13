@@ -1,7 +1,7 @@
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     
-    tabcontent = document.getElementsByClassName("content-div");
+    tabcontent = document.getElementsByClassName("column-1");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }

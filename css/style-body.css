@@ -71,6 +71,7 @@ body {
 	width: 100%;
 	height: 100%;
 	background: #ace1fd;
+	display: none;
 }
 
 @media only screen and (min-width: 600px) {

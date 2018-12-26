@@ -20,7 +20,7 @@ body {
 
 #navbar {
 	width: 100%;
-	height: auto;
+	height: 50px;
 	position: absolute;
 	top:0;
 	left:0;
@@ -28,12 +28,12 @@ body {
 }
 
 .header {
-	height: 80px;
+	height: 50px;
 	background: #fff;
 }
 
 .tab {
-	height: 30px;
+	height: 50px;
 	background: #fff;
 }
 
@@ -58,7 +58,7 @@ body {
 #container {
 	height: 3000px;
 	padding: 8px;
-	margin-top:110px;
+	margin-top:50px;
 	display: flex;
 	flex-direction: column;
 }
@@ -82,7 +82,7 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-	#content {
+	#container {
 		width: 90%;
 		margin: auto;
 	}
@@ -102,13 +102,13 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-	#content {
+	#container {
 		width: 80%;
 	}
 }
 
 @media only screen and (min-width: 1800px) {
-	#content {
+	#container {
 		width: 50%;
 	}
 }

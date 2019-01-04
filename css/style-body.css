@@ -93,11 +93,9 @@ body {
 	
 	.column-1 {
 		float: left;
-		margin-right: 8px;
 	}
 	
 	#column-2 {
-		margin-left: 8px;
 		width: 200px;
 		display: block;
 	}

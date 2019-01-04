@@ -118,4 +118,7 @@ body {
 	#content {
 		width: 60%;
 	}
+	#container {
+		width: 100%;
+	}
 }

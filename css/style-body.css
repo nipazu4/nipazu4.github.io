@@ -58,7 +58,6 @@ body {
 #container {
 	height: 3000px;
 	padding: 8px;
-	margin-top:50px;
 	display: flex;
 	flex-direction: column;
 }

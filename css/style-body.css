@@ -63,7 +63,7 @@ body {
 	height: 3000px;
 	display: flex;
 	flex-direction: column;
-	margin-top: 250px;
+	padding-top: 250px;
 }
 
 .column-1 {
@@ -89,7 +89,7 @@ body {
 		width: 90%;
 		margin: auto;
 		margin-bottom:8px;
-		margin-top: 250px;
+		padding-top: 250px;
 	}
 
 	#container {

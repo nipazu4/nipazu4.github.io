@@ -35,14 +35,7 @@ body {
 .tab {
 	height: 50px;
 	background: #fff;
-}
-
-.tab-fix {
-	position: fixed;
-	top:0;
-	left:0;
-	right:0;
-	width: 100%;
+	position: sticky;
 }
 
 .tablinks {
@@ -115,14 +108,6 @@ body {
 		height: 100%;
 		margin: auto;
 	}
-	.tab-fix {
-		height: 50px;
-		background: #fff;
-		position: fixed;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 1200px;
-	}
 	.column-1 {
 		margin-right: 8px;
 	}
@@ -136,9 +121,6 @@ body {
 
 @media only screen and (min-width: 1800px) {
 	#content {
-		width: 60%;
-	}
-	.tab-fix {
 		width: 60%;
 	}
 	#container {

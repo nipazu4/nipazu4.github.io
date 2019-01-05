@@ -17,24 +17,21 @@ body {
 	height: 100%;
 }
 
-#navbar {
+.logo {
+	height: 200px;
 	width: 100%;
-	height: auto;
+	background: #451543;
 	position: absolute;
 	top:0;
 	left:0;
 	right:0;
 }
 
-.logo {
-	height: 200px;
-	width: 100%;
-	background: #451543;
-}
-
 .tab {
 	height: 50px;
 	background: #fff;
+	position: sticky;
+	top:0;
 }
 
 .tablinks {

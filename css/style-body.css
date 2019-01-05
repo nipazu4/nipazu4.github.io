@@ -38,7 +38,13 @@ body {
 }
 
 .tab-fix {
+	height: 50px;
+	background: #fff;
 	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	width: 100%;
 }
 
 .tablinks {
@@ -85,6 +91,7 @@ body {
 		width: 90%;
 		margin: auto;
 		margin-bottom:8px;
+		margin-top: 250px;
 	}
 
 	#container {
@@ -109,6 +116,16 @@ body {
 		width: 1200px;
 		height: 100%;
 		margin: auto;
+	}
+	
+	.tab-fix {
+		height: 50px;
+		background: #fff;
+		position: fixed;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 1200px;
+	
 	}
 	.column-1 {
 		margin-right: 8px;

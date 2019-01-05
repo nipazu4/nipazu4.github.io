@@ -38,8 +38,6 @@ body {
 }
 
 .tab-fix {
-	height: 50px;
-	background: #fff;
 	position: fixed;
 	top:0;
 	left:0;

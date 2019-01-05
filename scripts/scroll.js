@@ -5,11 +5,11 @@ window.onscroll = function() {headerScroll()};
 var header = document.getElementById("tab");
 
 // Get the offset position of the navbar
-var header = header.offsetTop;
+var sticky = header.offsetTop;
 
 // Add the tab-fix class to the header when you reach its scroll position. Remove "tab-fix" when you leave the scroll position
 function headerScroll() {
-  if (window.pageYOffset > header) {
+  if (window.pageYOffset > sticky) {
     header.classList.add("tab-fix");
   } else {
     header.classList.remove("tab-fix");

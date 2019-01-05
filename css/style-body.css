@@ -140,6 +140,9 @@ body {
 	#content {
 		width: 60%;
 	}
+	.tab-fix {
+		width: 60%;
+	}
 	#container {
 		width: 100%;
 	}

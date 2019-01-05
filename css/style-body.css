@@ -27,7 +27,7 @@ body {
 	height: 50px;
 	background: #fff;
 	position: sticky;
-	top:200px;
+	top:0;
 }
 
 .tablinks {
@@ -48,7 +48,6 @@ body {
 	height: 1500px;
 	display: flex;
 	flex-direction: column;
-	padding-top: 250px;
 }
 
 .column-1 {
@@ -72,7 +71,6 @@ body {
 		width: 90%;
 		margin: auto;
 		margin-bottom:8px;
-		padding-top: 250px;
 	}
 
 	#container {

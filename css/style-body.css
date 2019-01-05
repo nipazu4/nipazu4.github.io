@@ -117,7 +117,6 @@ body {
 		height: 100%;
 		margin: auto;
 	}
-	
 	.tab-fix {
 		height: 50px;
 		background: #fff;
@@ -125,12 +124,10 @@ body {
 		left: 50%;
 		transform: translateX(-50%);
 		width: 1200px;
-	
 	}
 	.column-1 {
 		margin-right: 8px;
 	}
-	
 	#column-2 {
 		margin-left: 8px;
 	}

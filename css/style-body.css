@@ -31,7 +31,7 @@ body {
 	height: 50px;
 	background: #fff;
 	position: sticky;
-	top:0;
+	top:-1px;
 }
 
 .tablinks {

@@ -49,7 +49,7 @@ body {
 }
 
 .tab #search {
-	width:240px;
+	width:200px;
 	height:50px;
 	float:right;
 	background-color:#ababab;
@@ -99,7 +99,7 @@ body {
 	}
 	
 	#column-2 {
-		flex-basis: 240px;
+		flex-basis: 200px;
 		display: block;
 		margin-left: 8px;
 	}

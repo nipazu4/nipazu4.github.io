@@ -60,7 +60,10 @@ body {
 .column-1 embed {
 	height:auto;
 	width:100%;
-	text-align:justify;
+}
+
+element.style {
+	text-align: justify;
 }
 
 #column-2 {

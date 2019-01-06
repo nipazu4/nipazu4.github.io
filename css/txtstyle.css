@@ -4,7 +4,7 @@ html, body {
 	font-family:"Lucida Console", Monaco, monospace;
 }
 
-.text {
+.item {
 	background:#ACE1FD;
 	margin-bottom:24px;
 	padding:8px;

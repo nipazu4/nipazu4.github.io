@@ -38,6 +38,7 @@ body {
 .tab button {
 	height: 100%;
 	margin: 0;
+	border-style:none;
 	font-family:inherit;
 	font-size:1em;
 }

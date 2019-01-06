@@ -56,19 +56,17 @@ body {
 }
 
 .tab #search input[type="text"] {
-	height:34px;
-	width:166px;
+	height:50px;
+	width:150px;
 	border:none;
 	padding:none;
-	margin-top:8px;
 	background:#ACE1FD;
 }
 
 .tab #search input[type="submit"] {
-	width:34px;
-	height:34px;
+	width:50px;
+	height:50px;
 	float:right;
-	margin-top:8px;
 	font-family:inherit;
 }
 

@@ -86,11 +86,13 @@ body {
 	}
 	.column-1 {
 		float: left;
+		margin-right: 8px;
 	}
 	
 	#column-2 {
 		width: 200px;
 		display: block;
+		margin-left: 8px;
 	}
 }
 
@@ -100,12 +102,6 @@ body {
 		width: 1200px;
 		height: 100%;
 		margin: auto;
-	}
-	.column-1 {
-		margin-right: 8px;
-	}
-	#column-2 {
-		margin-left: 8px;
 	}
 	#content {
 		width: 1200px;

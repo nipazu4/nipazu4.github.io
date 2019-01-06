@@ -56,11 +56,7 @@ body {
 }
 
 .tab #search input[type="text"] {
-	height:50px;
-	width:150px;
-	border:none;
-	padding:none;
-	background:#ACE1FD;
+
 }
 
 .tab #search input[type="submit"] {
@@ -71,7 +67,11 @@ body {
 }
 
 .textinput {
-	padding:0;
+	height:50px;
+	width:150px;
+	border:none;
+	padding:none;
+	background:#ACE1FD;
 }
 
 #content {

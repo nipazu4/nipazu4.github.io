@@ -58,7 +58,7 @@ body {
 }
 
 .column-1 iframe {
-	height:auto;
+	height:100%;
 	width:100%;
 	border-style:none;
 }

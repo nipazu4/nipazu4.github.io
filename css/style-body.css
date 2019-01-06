@@ -41,10 +41,18 @@ body {
 	border:none;
 	font-family:inherit;
 	font-size:1em;
+	background-color:#ababab;
 }
 
 .tab button:focus {
     outline:none;
+}
+
+.tab search {
+	width:250px;
+	height:100%;
+	float:right;
+	background-color:#ababab;
 }
 
 #content {

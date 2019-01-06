@@ -56,7 +56,10 @@ body {
 }
 
 .tab #search input[type="text"] {
-	
+	height:50px;
+	width:auto;
+	border:none;
+	background:#ACE1FD;
 }
 
 .tab #search input[type="submit"] {

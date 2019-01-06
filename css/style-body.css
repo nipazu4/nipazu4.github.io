@@ -71,7 +71,7 @@ body {
 	#container {
 		width: 90%;
 		margin: auto;
-		margin-bottom:8px;
+		margin-bottom:32px;
 		margin-top:32px;
 		flex-direction: row;
 	}

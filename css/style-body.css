@@ -57,7 +57,7 @@ body {
 
 .tab #search input[type="text"] {
 	height:34px;
-	width:150px;
+	width:166px;
 	border:none;
 	padding:none;
 	margin-top:8px;
@@ -65,7 +65,7 @@ body {
 }
 
 .tab #search input[type="submit"] {
-	width:50px;
+	width:34px;
 	height:34px;
 	float:right;
 	margin-top:8px;

@@ -6,10 +6,5 @@ html, body {
 
 .text {
 	background:#61C6FB;
-	margin-bottom:16px;
-}
-
-.text h1, .text h2, .text h3 {
-	margin-top: none;
-	margin-block-start: none;
+	margin-bottom:24px;
 }

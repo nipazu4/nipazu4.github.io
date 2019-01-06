@@ -8,3 +8,7 @@ html, body {
 	background:#61C6FB;
 	margin-bottom:16px;
 }
+
+.text h1, .text h2, .text h3 {
+	margin-top: none;
+}

@@ -70,6 +70,10 @@ body {
 	font-family:inherit;
 }
 
+.textinput {
+	padding:0;
+}
+
 #content {
 	height: 1500px;
 	display: flex;

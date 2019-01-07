@@ -41,7 +41,7 @@ body {
 .tablinks {
 	float:left;
 	height:100%;
-	width:25%;
+	width:20%;
 	margin:0;
 	padding:16px;
 	border:none;
@@ -60,6 +60,14 @@ body {
 
 .tab button:focus {
     outline:none;
+}
+
+.dropdown {
+	float:right;
+	height:100%;
+	width:50px;
+	margin:0;
+	background:#ccccaa;
 }
 
 #content {

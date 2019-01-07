@@ -43,7 +43,7 @@ body {
 	padding:16px;
 }
 
-.tab button {
+.tablinks {
 	float:left;
 	height:100%;
 	margin:0;

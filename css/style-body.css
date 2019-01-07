@@ -42,7 +42,11 @@ body {
 	border:none;
 	font-family:inherit;
 	font-size:1em;
-	background-color:#ababab;
+	background:#ababab;
+}
+
+.tab button:hover {
+	background:#885d41;
 }
 
 .tab button:focus {

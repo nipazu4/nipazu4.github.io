@@ -24,9 +24,8 @@ body {
 }
 
 .logo h1 {
-	font-size:8rem;
+	font-size:4rem;
 	line-height:200px;
-	margin:0;
 }
 
 .tab {
@@ -100,6 +99,11 @@ body {
 		margin-bottom:32px;
 		margin-top:32px;
 		flex-direction: row;
+	}
+	.logo h1 {
+		font-size:8rem;
+		line-height:200px;
+		margin:0;
 	}
 	.column-1 {
 		float: left;

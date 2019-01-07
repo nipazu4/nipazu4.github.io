@@ -133,9 +133,7 @@ body {
 
 @media only screen and (min-width: 1800px) {
 	#container {
-		width: 60%;
 	}
 	#content {
-		width: 100%;
 	}
 }

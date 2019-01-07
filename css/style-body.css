@@ -26,6 +26,7 @@ body {
 .logo h1 {
 	font-size:8rem;
 	line-height:200px;
+	margin:0;
 }
 
 .tab {

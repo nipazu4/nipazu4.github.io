@@ -39,14 +39,10 @@ body {
 }
 
 .tablinks {
-	margin:0;
-	padding:16px;
-}
-
-.tablinks {
 	float:left;
 	height:100%;
 	margin:0;
+	padding:16px;
 	border:none;
 	font-family:inherit;
 	font-size:1em;

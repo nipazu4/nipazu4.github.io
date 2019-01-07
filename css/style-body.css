@@ -10,7 +10,9 @@ body {
 	width: 100%;
 	margin: auto;
 }
-
+::-webkit-scrollbar { 
+	display: none; 
+}
 #container {
 	position: relative;
 	width: 100%;

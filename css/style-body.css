@@ -23,6 +23,10 @@ body {
 	background: #451543;
 }
 
+.logo h1 {
+	font-size:2em;
+}
+
 .tab {
 	height:50px;
 	background:#fff;

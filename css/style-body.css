@@ -32,7 +32,7 @@ body {
 
 .tablinks {
 	margin:0;
-	padding:0;
+	padding:16px;
 }
 
 .tab button {

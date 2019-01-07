@@ -42,11 +42,15 @@ body {
 	border:none;
 	font-family:inherit;
 	font-size:1em;
-	background:#ababab;
+	background:#ccccaa;
 }
 
 .tab button:hover {
 	background:#885d41;
+}
+
+.tab button:active {
+	background:#428bca;
 }
 
 .tab button:focus {

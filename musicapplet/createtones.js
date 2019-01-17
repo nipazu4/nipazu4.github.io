@@ -9,7 +9,7 @@ function Shuffle(o) {
 function printNumbers() {
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
-		document.getElementById("output0").innerHTML += "<span>" + Shuffle(numbers) + "</span>";
+		document.getElementById("output0").innerHTML = "<span>" + Shuffle(numbers) + "</span>";
 	}
 	
 }

@@ -13,6 +13,7 @@ html, body {
 #numbercontainer {
 	padding:5px;
 	width:auto;
+	height:30px;
 }
 
 .output {

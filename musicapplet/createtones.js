@@ -8,6 +8,7 @@ function shuffle(o) {
 
 function printNumbers() {
 	for (i = 0; i < numbers.length; i++) {
-		document.getElementById("output").innerHTML = shuffle(numbers)[i];
+		document.getElementById("output'i'").innerHTML = shuffle(numbers)[i];
 	}
+	
 }

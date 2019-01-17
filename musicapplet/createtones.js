@@ -12,5 +12,4 @@ function printNumbers() {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = "<span>" + shuffledNumbers[n] + "</span>";
 	}
-	
 }

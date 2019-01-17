@@ -10,6 +10,6 @@ function printNumbers() {
 	var shuffledNumbers = Shuffle(numbers);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
-		document.getElementById(elementId).innerHTML = "<span>" + shuffledNumbers[n] + "</span>";
+		document.getElementById(elementId).innerHTML = shuffledNumbers[n];
 	}
 }

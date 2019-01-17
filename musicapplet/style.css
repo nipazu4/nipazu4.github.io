@@ -13,17 +13,18 @@ html, body {
 #numbercontainer {
 	padding:5px;
 	width:auto;
-	height:30px;
+	height:auto;
 }
 
 .output {
     display: inline-block;
     background: #DDD;
-    padding: 5px;
-    margin:0;
-    width: 20px;
-    height: 20px;
+    padding:0;
+    margin:5px;
+    width: 30px;
+    height: 30px;
     text-align: center;
+	float:left
 }
 
 #create {

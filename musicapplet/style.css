@@ -1,4 +1,4 @@
-#output span {
+.output {
     display: inline-block;
     background: #DDD;
     padding: 5px;

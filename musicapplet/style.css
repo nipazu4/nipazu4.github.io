@@ -1,3 +1,8 @@
+html, body {
+	margin:0;
+	font-family:"Lucida Console", Monaco, monospace;
+}
+
 .output {
     display: inline-block;
     background: #DDD;

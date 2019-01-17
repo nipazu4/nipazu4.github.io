@@ -7,9 +7,10 @@ function Shuffle(o) {
 };
 
 function printNumbers() {
+	var shuffledNumbers = Shuffle(numbers);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
-		document.getElementById("output0").innerHTML = "<span>" + Shuffle(numbers) + "</span>";
+		document.getElementById(elementId).innerHTML = "<span>" + shuffledNumbers[n] + "</span>";
 	}
 	
 }

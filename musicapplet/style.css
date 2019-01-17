@@ -21,7 +21,7 @@ html, body {
 }
 
 #create {
-	   display: inline-block;
+	display: inline-block;
     background: #DDD;
 	height: 20px;
 	width:50px;

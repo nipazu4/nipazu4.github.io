@@ -6,5 +6,5 @@ function shuffle(o) {
 };
 
 function printNumbers() {
-	document.getElementById("output").innerHTML = <span>shuffle(numbers)</span>;	
+	document.getElementById("output").innerHTML = shuffle(numbers);	
 }

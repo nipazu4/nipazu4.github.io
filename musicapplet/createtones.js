@@ -6,5 +6,16 @@ function shuffle(o) {
 };
 
 function printNumbers() {
-	document.getElementById("output").innerHTML = shuffle(numbers);	
+	document.getElementById("output").innerHTML = shuffle(numbers)[0];
+	document.getElementById("output").innerHTML = shuffle(numbers)[1];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[2];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[3];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[4];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[5];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[6];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[7];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[8];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[9];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[10];	
+	document.getElementById("output").innerHTML = shuffle(numbers)[11];	
 }

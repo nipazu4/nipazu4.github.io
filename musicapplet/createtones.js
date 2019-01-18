@@ -13,3 +13,4 @@ function printNumbers() {
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n];
 	}
 }
+

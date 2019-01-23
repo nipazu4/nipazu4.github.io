@@ -1,7 +1,7 @@
 VF = Vex.Flow;
 
 // Create an SVG renderer and attach it to the DIV element named "boo".
-var div = document.getElementById("row")
+var canvas = document.getElementById("row")
 var renderer = new VF.Renderer(div, VF.Renderer.Backends.SVG);
 
 // Size our svg:

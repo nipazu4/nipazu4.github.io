@@ -55,17 +55,17 @@ var notenames = [
 
 var notes = [
     notenames[1],
-    notenames[2],
-    notenames[3],
-    notenames[4],
-    notenames[5],
-    notenames[6],
-    notenames[7],
-    notenames[8],
-    notenames[9],
-    notenames[10],
-    notenames[11],
-    notenames[12]
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1],
+    notenames[1]
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

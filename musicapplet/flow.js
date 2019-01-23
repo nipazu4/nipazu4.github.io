@@ -2,33 +2,33 @@ VF = Vex.Flow;
 
 // We created an object to store the information about the workspace
 var WorkspaceInformation = {
-    // The div in which you're going to work
-    div: document.getElementById("row"),
-    // Vex creates a svg with specific dimensions
+    // The <canvas> element in which you're going to work
+    canvas: document.getElementById("some-canvas-id"),
+    // Vex creates a canvas with specific dimensions
     canvasWidth: 590,
-    canvasHeight: 360
+    canvasHeight: 160
 };
 
-// Create a renderer with SVG
+// Create a renderer with Canvas
 var renderer = new VF.Renderer(
-    WorkspaceInformation.div,
-    VF.Renderer.Backends.SVG
+    WorkspaceInformation.canvas,
+    VF.Renderer.Backends.CANVAS
 );
 
-// Use the renderer to give the dimensions to the SVG
+// Use the renderer to give the dimensions to the canvas
 renderer.resize(WorkspaceInformation.canvasWidth, WorkspaceInformation.canvasHeight);
 
 // Expose the context of the renderer
 var context = renderer.getContext();
 
-// And give some style to our SVG
+// And give some style to our canvas
 context.setFont("Arial", 10, "").setBackgroundFillStyle("#eed");
 
 
 /**
  * Creating a new stave
  */
-// Create a stave of width 400 at position x10, y40 on the SVG.
+// Create a stave of width 400 at position x10, y40 on the canvas.
 var stave = new VF.Stave(10, 40, 400);
 // Add a clef and time signature.
 stave.addClef("treble").addTimeSignature("4/4");

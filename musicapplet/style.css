@@ -51,4 +51,5 @@ html, body {
 	border:none;
 	margin:5px;
     text-align:center;	
+	font-family:inherit;
 }

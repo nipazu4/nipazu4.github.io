@@ -34,3 +34,27 @@ var stave = new VF.Stave(5, 40, 580);
 stave.addClef("treble");
 // Set the context of the stave our previous exposed context and execute the method draw !
 stave.setContext(context).draw();
+
+var notes = [
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+]
+
+var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
+voice.addTickables(notes);
+
+//Format and justify notes to 440 pixels
+var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 440);
+
+// Render voice
+voice.draw(context, stave);

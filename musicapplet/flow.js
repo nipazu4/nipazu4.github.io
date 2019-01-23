@@ -5,7 +5,7 @@ var canvas = document.getElementById("row")
 var renderer = new VF.Renderer(div, VF.Renderer.Backends.SVG);
 
 // Size our svg:
-renderer.resize(500, 500);
+renderer.resize(360, 600);
 
 // And get a drawing context:
 var context = renderer.getContext();

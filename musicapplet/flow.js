@@ -38,11 +38,11 @@ stave.addClef("treble");
 stave.setContext(context).draw();
 stave2.setContext(context).draw();
 
-var e = 'new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })';
-var f = 'new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" })';
-var fis = 'new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))';
-var g = 'new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" })';
-var gis = 'new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))';
+var e = new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" });
+var f = new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" });
+var fis = new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
+var g = new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" });
+var gis = new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
 
 
 

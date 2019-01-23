@@ -11,7 +11,8 @@ html, body {
 	top:50%;
 	left:50%;
 	transform:translate(-50%, -50%);
-	width:auto;
+	width:600px;
+	height:400px;
 	background:#f5f5f5;
 	margin:auto;
 	overflow:hidden;
@@ -19,6 +20,7 @@ html, body {
 
 #row {
 	height:360px;
+	width:600px;
 	background:#add8e6;
 }
 

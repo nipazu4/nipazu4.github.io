@@ -87,18 +87,18 @@ var notenames = [
 ]
 
 var notes = [
-    notenames[note1],
-    notenames[note2],
-    notenames[note3],
-    notenames[note4],
-    notenames[note5],
-    notenames[note6],
-    notenames[note7],
-    notenames[note8],
-    notenames[note9],
-    notenames[note10],
-    notenames[note11],
-    notenames[note12]
+    notenames["note1"],
+    notenames["note2"],
+    notenames["note3"],
+    notenames["note4"],
+    notenames["note5"],
+    notenames["note6"],
+    notenames["note7"],
+    notenames["note8"],
+    notenames["note9"],
+    notenames["note10"],
+    notenames["note11"],
+    notenames["note12"]
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

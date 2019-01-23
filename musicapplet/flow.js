@@ -1,4 +1,4 @@
-const VF = Vex.Flow;
+VF = Vex.Flow;
 
 // Create an SVG renderer and attach it to the DIV element named "boo".
 var vf = new Vex.Flow.Factory({

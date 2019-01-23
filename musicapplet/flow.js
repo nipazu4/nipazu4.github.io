@@ -3,16 +3,16 @@ VF = Vex.Flow;
 // We created an object to store the information about the workspace
 var WorkspaceInformation = {
     // The <canvas> element in which you're going to work
-    canvas: document.getElementById("row"),
-    // Vex creates a canvas with specific dimensions
+    div: document.getElementById("row"),
+    // Vex creates a svg with specific dimensions
     canvasWidth: 590,
     canvasHeight: 160
 };
 
-// Create a renderer with Canvas
+// Create a renderer with SVG
 var renderer = new VF.Renderer(
-    WorkspaceInformation.canvas,
-    VF.Renderer.Backends.CANVAS
+    WorkspaceInformation.div,
+    VF.Renderer.Backends.SVG
 );
 
 // Use the renderer to give the dimensions to the canvas
@@ -29,7 +29,7 @@ context.setFont("Arial", 12, "").setBackgroundFillStyle("#eed");
  * Creating a new stave
  */
 // Create a stave of width 400 at position x10, y40 on the canvas.
-var stave = new VF.Stave(10, 40, 570);
+var stave = new VF.Stave(5, 40, 580);
 // Add a clef and time signature.
 stave.addClef("treble");
 // Set the context of the stave our previous exposed context and execute the method draw !

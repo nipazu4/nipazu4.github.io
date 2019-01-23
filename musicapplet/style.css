@@ -24,18 +24,17 @@ html, body {
 	float:left;
     background:#DDD;
     padding:0;
-    margin:5px;
     width:30px;
     height:30px;
     text-align: center;
 }
 
-#create {
-	display: inline-block;
-    background: #DDD;
+#button {
+	display:block;
+	float:left;
+    background:#DDD;
 	height: 30px;
 	width:100px;
-    padding: 5px;
-    margin: 5px;
-    text-align: center;	
+    padding:5px;
+    text-align:center;	
 }

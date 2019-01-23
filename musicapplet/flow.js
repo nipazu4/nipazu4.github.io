@@ -29,8 +29,8 @@ context.setFont("Lucida Console", 12, "").setBackgroundFillStyle("#eed");
  * Creating a new stave
  */
 // Create a stave of width 400 at position x10, y40 on the canvas.
-var stave = new VF.Stave(5, 40, 105);
-var stave2 = new VF.Stave(110, 40, 475);
+var stave = new VF.Stave(5, 40, 100);
+var stave2 = new VF.Stave(105, 40, 480);
 
 // Add a clef and time signature.
 stave.addClef("treble");

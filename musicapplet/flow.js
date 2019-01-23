@@ -36,18 +36,18 @@ stave.addClef("treble");
 stave.setContext(context).draw();
 
 var notes = [
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

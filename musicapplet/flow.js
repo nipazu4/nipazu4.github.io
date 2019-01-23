@@ -38,11 +38,12 @@ stave.addClef("treble");
 stave.setContext(context).draw();
 stave2.setContext(context).draw();
 
-
+var VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }) = 1
+var VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }) = 2
 
 var notes = [
-    new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
-    new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
+    new 1,
+    new 2,
     new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
     new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
     new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),

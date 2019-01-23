@@ -29,7 +29,9 @@ context.setFont("Lucida Console", 12, "").setBackgroundFillStyle("#eed");
  * Creating a new stave
  */
 // Create a stave of width 400 at position x10, y40 on the canvas.
-var stave = new VF.Stave(5, 40, 580);
+var stave = new VF.Stave(5, 40, 105);
+var stave2 = new VF.Stave(110, 40, 475);
+
 // Add a clef and time signature.
 stave.addClef("treble");
 // Set the context of the stave our previous exposed context and execute the method draw !
@@ -57,4 +59,4 @@ voice.addTickables(notes);
 var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 440);
 
 // Render voice
-voice.draw(context, stave);
+voice.draw(context, stave2);

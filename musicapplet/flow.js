@@ -3,7 +3,7 @@ VF = Vex.Flow;
 // We created an object to store the information about the workspace
 var WorkspaceInformation = {
     // The <canvas> element in which you're going to work
-    canvas: document.getElementById("some-canvas-id"),
+    canvas: document.getElementById("row"),
     // Vex creates a canvas with specific dimensions
     canvasWidth: 590,
     canvasHeight: 160

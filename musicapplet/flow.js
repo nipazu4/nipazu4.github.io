@@ -58,6 +58,19 @@ stave2.setContext(context).draw();
 
 printNumbers();
 
+var note1 = shuffledNumbers[0];
+var note2 = shuffledNumbers[1];
+var note3 = shuffledNumbers[2];
+var note4 = shuffledNumbers[3];
+var note5 = shuffledNumbers[4];
+var note6 = shuffledNumbers[5];
+var note7 = shuffledNumbers[6];
+var note8 = shuffledNumbers[7];
+var note9 = shuffledNumbers[8];
+var note10 = shuffledNumbers[9];
+var note11 = shuffledNumbers[10];
+var note12 = shuffledNumbers[11];
+
 var notenames = [
 	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
 	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
@@ -74,18 +87,18 @@ var notenames = [
 ]
 
 var notes = [
-    notenames[shuffledNumbers[0]],
-    notenames[shuffledNumbers[1]],
-    notenames[shuffledNumbers[2]],
-    notenames[shuffledNumbers[3]],
-    notenames[shuffledNumbers[4]],
-    notenames[shuffledNumbers[5]],
-    notenames[shuffledNumbers[6]],
-    notenames[shuffledNumbers[7]],
-    notenames[shuffledNumbers[8]],
-    notenames[shuffledNumbers[9]],
-    notenames[shuffledNumbers[10]],
-    notenames[shuffledNumbers[11]]
+    notenames[note1],
+    notenames[note2],
+    notenames[note3],
+    notenames[note4],
+    notenames[note5],
+    notenames[note6],
+    notenames[note7],
+    notenames[note8],
+    notenames[note9],
+    notenames[note10],
+    notenames[note11],
+    notenames[note12]
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

@@ -43,7 +43,13 @@ var f = new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" });
 var fis = new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
 var g = new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" });
 var gis = new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
-
+var a = new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" });
+var ais = new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
+var h = new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" });
+var c = new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" });
+var cis = new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
+var d = new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" });
+var dis = new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"));
 
 
 var notes = [
@@ -52,13 +58,13 @@ var notes = [
     fis,
     g,
     gis,
-    new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }),
-    new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-    new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" }),
-    new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }),
-    new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-    new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }),
-    new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))
+    a,
+    ais,
+    h,
+    c,
+    cis,
+    d,
+    dis
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

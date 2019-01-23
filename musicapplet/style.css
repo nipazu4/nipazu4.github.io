@@ -19,13 +19,13 @@ html, body {
 }
 
 .output {
-    display: inline;
+    display:inline;
 	float:left;
-    background: #DDD;
+    background:#DDD;
     padding:0;
     margin:5px;
-    width: 30px;
-    height: 30px;
+    width:30px;
+    height:30px;
     text-align: center;
 }
 

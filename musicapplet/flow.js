@@ -38,6 +38,8 @@ stave.addClef("treble");
 stave.setContext(context).draw();
 stave2.setContext(context).draw();
 
+"e/4" = shuffledNumbers()[1];
+
 var notes = [
     new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
     new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),

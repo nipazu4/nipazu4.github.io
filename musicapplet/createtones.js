@@ -1,4 +1,5 @@
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+var tones = ["e/4", "f/4", "f#/4", "g/4", "g#/4", "a/4", "a#/4", "b/4", "c/4", "c#/4", "d/4", "d#/4"];
 var n;
 
 function Shuffle(o) {

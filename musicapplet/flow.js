@@ -22,7 +22,7 @@ renderer.resize(WorkspaceInformation.canvasWidth, WorkspaceInformation.canvasHei
 var context = renderer.getContext();
 
 // And give some style to our canvas
-context.setFont("Arial", 12, "").setBackgroundFillStyle("#eed");
+context.setFont("Lucida Console", 12, "").setBackgroundFillStyle("#eed");
 
 
 /**

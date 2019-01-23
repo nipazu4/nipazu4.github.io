@@ -16,7 +16,6 @@ function printNumbers() {
 }
 
 
-
 VF = Vex.Flow;
 
 // We created an object to store the information about the workspace

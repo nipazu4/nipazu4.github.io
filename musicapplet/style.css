@@ -11,8 +11,7 @@ html, body {
 	top:50%;
 	left:50%;
 	transform:translate(-50%, -50%);
-	width:600px;
-	height:400px;
+	width:auto;
 	background:#f5f5f5;
 	margin:auto;
 	overflow:hidden;
@@ -48,7 +47,8 @@ html, body {
     background:#DDD;
 	height:30px;
 	width:100px;
-    padding:5px;
+    padding:0;
+	border:none;
 	margin:5px;
     text-align:center;	
 }

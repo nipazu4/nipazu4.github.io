@@ -50,7 +50,7 @@ var notes = [
 	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
 ]
 
-var voice = new VF.Voice({num_beats: 4,  beat_value: 4});
+var voice = new VF.Voice({num_beats: 12,  beat_value: 4});
 voice.addTickables(notes);
 
 //Format and justify notes to 440 pixels

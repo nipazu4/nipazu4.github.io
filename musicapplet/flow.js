@@ -5,7 +5,7 @@ var WorkspaceInformation = {
     // The div in which you're going to work
     div: document.getElementById("row"),
     // Vex creates a svg with specific dimensions
-    canvasWidth: 600,
+    canvasWidth: 590,
     canvasHeight: 360
 };
 

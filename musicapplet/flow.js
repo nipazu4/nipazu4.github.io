@@ -76,3 +76,4 @@ var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 475);
 
 // Render voice
 voice.draw(context, stave2);
+

@@ -6,11 +6,11 @@ html, body {
 #container {
 		width: auto;
 		background: #f5f5f5;
-		margin: auto;
-		
+		margin: auto;	
 }
 
 #numbercontainer {
+	display:block;
 	padding:5px;
 	width:auto;
 	height:auto;
@@ -24,7 +24,6 @@ html, body {
     width: 30px;
     height: 30px;
     text-align: center;
-	float:left
 }
 
 #create {

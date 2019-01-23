@@ -4,9 +4,10 @@ html, body {
 }
 
 #container {
-		width: auto;
-		background: #f5f5f5;
-		margin: auto;	
+	width:auto;
+	background:#f5f5f5;
+	margin:auto;
+	overflow:hidden;
 }
 
 #numbercontainer {
@@ -14,10 +15,12 @@ html, body {
 	padding:5px;
 	width:auto;
 	height:auto;
+	float:left;
 }
 
 .output {
-    display: inline-block;
+    display: inline;
+	float:left;
     background: #DDD;
     padding:0;
     margin:5px;

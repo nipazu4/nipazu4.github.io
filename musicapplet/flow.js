@@ -22,14 +22,14 @@ renderer.resize(WorkspaceInformation.canvasWidth, WorkspaceInformation.canvasHei
 var context = renderer.getContext();
 
 // And give some style to our canvas
-context.setFont("Arial", 14, "").setBackgroundFillStyle("#eed");
+context.setFont("Arial", 12, "").setBackgroundFillStyle("#eed");
 
 
 /**
  * Creating a new stave
  */
 // Create a stave of width 400 at position x10, y40 on the canvas.
-var stave = new VF.Stave(10, 40, 400);
+var stave = new VF.Stave(10, 40, 590);
 // Add a clef and time signature.
 stave.addClef("treble").addTimeSignature("4/4");
 // Set the context of the stave our previous exposed context and execute the method draw !

@@ -11,6 +11,11 @@ html, body {
 	overflow:hidden;
 }
 
+#row {
+	height:360px;
+	background:add8e6;
+}
+
 #numbercontainer {
 	display:inline-block;
 	width:auto;

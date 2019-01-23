@@ -60,4 +60,4 @@ voice.addTickables(notes);
 var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 475);
 
 // Render voice
-voice.draw(context2, stave2);
+voice.draw(context, stave2);

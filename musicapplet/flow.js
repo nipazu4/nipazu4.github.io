@@ -36,7 +36,7 @@ var stave2 = new VF.Stave(110, 40, 475);
 stave.addClef("treble");
 // Set the context of the stave our previous exposed context and execute the method draw !
 stave.setContext(context).draw();
-stave2.setContext(context2).draw();
+stave2.setContext(context).draw();
 
 var notes = [
     new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),

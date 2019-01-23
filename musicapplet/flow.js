@@ -54,18 +54,18 @@ var notenames = [
 ]
 
 var notes = [
-    notenames[0],
-    notenames[1],
-    notenames[2],
-    notenames[3],
-    notenames[4],
-    notenames[5],
-    notenames[6],
-    notenames[7],
-    notenames[8],
-    notenames[9],
-    notenames[10],
-    notenames[11]
+    notenames[shuffledNumbers[0]],
+    notenames[shuffledNumbers[1]],
+    notenames[shuffledNumbers[2]],
+    notenames[shuffledNumbers[3]],
+    notenames[shuffledNumbers[4]],
+    notenames[shuffledNumbers[5]],
+    notenames[shuffledNumbers[6]],
+    notenames[shuffledNumbers[7]],
+    notenames[shuffledNumbers[8]],
+    notenames[shuffledNumbers[9]],
+    notenames[shuffledNumbers[10]],
+    notenames[shuffledNumbers[11]]
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

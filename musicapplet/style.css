@@ -26,6 +26,11 @@ html, body {
 	width:600px;
 }
 
+#midi {
+	margin: 5px;
+	float: left;
+}
+
 #numbercontainer {
 	display:inline-block;
 	width:auto;

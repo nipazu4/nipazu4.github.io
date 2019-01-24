@@ -54,7 +54,7 @@
 
 	function printNumbers() {
 		shuffledNumbers = Shuffle(numbers);
-		shuffledVoices = shuffledNumbers.map(a => a.tone);;
+		shuffledVoices = shuffledNumbers.map(a => a.tone);
 		for (n = 0; n < numbers.length; n++) {
 			var elementId = "output" + n;
 			document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;

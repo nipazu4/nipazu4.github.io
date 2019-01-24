@@ -72,18 +72,18 @@ var note11 = shuffledNumbers[10];
 var note12 = shuffledNumbers[11];
 
 var notenames = [
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))
+	VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }),
+	VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))
 ]
 
 var result = [];
@@ -92,18 +92,18 @@ for(var i = 0; i < shuffledNumbers.length; i++) {
 }
 
 var notes = [
-    result[0],
-    notenames[0],
-    notenames[2],
-    notenames[3],
-    notenames[4],
-    notenames[5],
-    notenames[6],
-    notenames[7],
-    notenames[8],
-    notenames[9],
-    notenames[10],
-    notenames[11]
+    new result[0],
+    new notenames[0],
+    new notenames[2],
+    new notenames[3],
+    new notenames[4],
+    new notenames[5],
+    new notenames[6],
+    new notenames[7],
+    new notenames[8],
+    new notenames[9],
+    new notenames[10],
+    new notenames[11]
 ]
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

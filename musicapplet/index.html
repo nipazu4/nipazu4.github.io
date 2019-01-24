@@ -7,12 +7,8 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="/musicapplet/style.css">
 	
-	<script src="https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
-	<script src="https://unpkg.com/vexflow/releases/vexflow-debug.js"></script>
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-	<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<script src="/musicapplet/abcjs_midi_5.6.2_min.js"></script>
 </head>
 <body>
 	<div id="container">
@@ -34,4 +30,52 @@
 		</div>
 	</div>
 </body>
-<script src="/musicapplet/flow.js" type="text/babel"></script>
+<script>
+	var numbers = [
+		{number:1, tone:"E"},
+		{number:2, tone:"F"},
+		{number:3, tone:"^F"},
+		{number:4, tone:"G"},
+		{number:5, tone:"^G"},
+		{number:6, tone:"A"},
+		{number:7, tone:"^A"},
+		{number:8, tone:"B"},
+		{number:9, tone:"c"},
+		{number:10, tone:"^c"},
+		{number:11, tone:"d"},
+		{number:12, tone:"^d"}
+	];
+
+	var n;
+	function Shuffle(o) {
+		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+		return o;
+	};
+
+	function printNumbers() {
+		shuffledNumbers = Shuffle(numbers);
+		shuffledVoices = ;
+		for (n = 0; n < numbers.length; n++) {
+			var elementId = "output" + n;
+			document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
+		}
+		return shuffledVoices;
+	}
+	printNumbers();
+
+
+
+	var row = document.getElementById("row");
+	var notes = 'X: 1\nL: 1/4\n' + printNumbers()[0];
+	
+	tuneObjectArray = ABCJS.renderAbc(
+    row,
+    notes,
+    {
+        staffwidth: 580,
+        paddingtop: 0,
+        paddingbottom: 0,
+        paddingright: 5,
+        paddingleft: 5,
+    });
+</script>

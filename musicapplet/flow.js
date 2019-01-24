@@ -52,6 +52,6 @@ system2.addStave({
 	voices: [
 		score.voice(score.notes('B4/w/r, B4/w/r, B4/w/r', {stem: 'up'}))
 	]
-}).addClef('treble');
+}).addClef('treble').addTimeSignature('12/4');;
 
 vf.draw();

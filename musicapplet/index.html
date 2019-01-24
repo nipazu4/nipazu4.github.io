@@ -54,29 +54,6 @@
 		return o;
 	};
 
-	function renderMidi() {
-		ABCJS.renderMidi(
-		midi,
-		notes,
-		{
-			qpm: 120,
-			inlineControls: {
-				tempo: true,
-			},
-		});
-
-	ABCJS.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));
-
-	ABCJS.midi.stopPlaying();
-
-	ABCJS.midi.restartPlaying();
-
-	ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
-
-
-	//abcjs.midi.setSoundFont("");
-	}
-	
 	function printNumbers() {
 		shuffledNumbers = Shuffle(numbers);
 		shuffledVoices = shuffledNumbers.map(a => a.tone);
@@ -98,7 +75,25 @@
 			paddingright: 5,
 			paddingleft: 5,
 		});
-		renderMidi();
+
+		
+		ABCJS.renderMidi(
+		midi,
+		notes,
+		{
+			qpm: 120,
+			inlineControls: {
+				tempo: true,
+			},
+		});
+
+		ABCJS.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));
+
+		ABCJS.midi.stopPlaying();
+
+		ABCJS.midi.restartPlaying();
+
+		ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
 	}
 
 

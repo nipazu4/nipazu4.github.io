@@ -15,7 +15,16 @@
 </body>
 <script>
 	var row = document.getElementById("row");
-	var notes = '%%pageheight 160\n%%staffwidth 580\nX: 1\nL: 1/4\nEF^FG^GA^ABc^cd^d';
-
-	ABCJS.renderAbc(row, notes);
+	var notes = '%%staffwidth 580\nX: 1\nL: 1/4\nEF^FG^GA^ABc^cd^d';
+	
+	const tuneObjectArray* = ABCJS.renderAbc(
+    row,
+    notes,
+    {
+        staffwidth: 580,
+        paddingtop: 0,
+        paddingbottom: 0,
+        paddingright: 5,
+        paddingleft: 5,
+    });
 </script>

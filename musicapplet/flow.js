@@ -1,6 +1,8 @@
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var n;
 
+VF = Vex.Flow;
+
 var notenames = [
 	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
 	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
@@ -42,8 +44,6 @@ function printNumbers() {
 	return shuffledNumbers;
 }
 
-
-VF = Vex.Flow;
 
 // We created an object to store the information about the workspace
 var WorkspaceInformation = {

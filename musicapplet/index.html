@@ -64,14 +64,8 @@
 	}
 	printNumbers();
 
-	function outputNotes() {
-		for (y = 0; y < numbers.length; y++) {
-			outputNotes += printNumbers()[y] + "+"
-		}
-	}
-
 	var row = document.getElementById("row");
-	var notes = 'X: 1\nL: 1/4\n' + outputNotes;
+	var notes = 'X: 1\nL: 1/4\n' + printNumbers()[0] + printNumbers()[1] + printNumbers()[2] + printNumbers()[3] + printNumbers()[4] + printNumbers()[5] + printNumbers()[6] + printNumbers()[7] + printNumbers()[8] + printNumbers()[9] + printNumbers()[10] + printNumbers()[11];
 	
 	tuneObjectArray = ABCJS.renderAbc(
     row,

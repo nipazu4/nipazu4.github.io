@@ -22,6 +22,7 @@ function Shuffle(o) {
 
 function printNumbers() {
 	const shuffledNumbers = Shuffle(numbers);
+	const shuffledVoices = shuffledNumbers.tone.join();
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;

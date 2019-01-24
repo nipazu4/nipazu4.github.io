@@ -55,7 +55,7 @@
 	};
 
 	function renderMidi() {
-		abcjs.renderMidi(
+		ABCJS.renderMidi(
 		midi,
 		notes,
 		{
@@ -65,13 +65,13 @@
 			},
 		});
 
-	abcjs.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));
+	ABCJS.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));
 
-	abcjs.midi.stopPlaying();
+	ABCJS.midi.stopPlaying();
 
-	abcjs.midi.restartPlaying();
+	ABCJS.midi.restartPlaying();
 
-	abcjs.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
+	ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
 
 
 	//abcjs.midi.setSoundFont("");

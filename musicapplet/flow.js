@@ -21,7 +21,7 @@ function Shuffle(o) {
 };
 
 function printNumbers() {
-	shuffledNumbers = Shuffle(numbers.number);
+	shuffledNumbers = Shuffle(numbers);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n];

@@ -92,7 +92,7 @@ for(var i = 0; i < shuffledNumbers.length; i++) {
 }
 
 var notes = [
-    new result[0],
+    new notenames[0],
     new notenames[0],
     new notenames[2],
     new notenames[3],

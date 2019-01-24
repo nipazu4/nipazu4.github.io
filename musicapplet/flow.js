@@ -26,6 +26,7 @@ function printNumbers() {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 	}
+	vf.draw();
 	return shuffledNumbers;
 }
 

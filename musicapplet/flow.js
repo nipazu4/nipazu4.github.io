@@ -22,9 +22,10 @@ function Shuffle(o) {
 
 function printNumbers() {
 	shuffledNumbers = Shuffle(numbers);
+	var numbers2 = shuffledNumbers.pluck("number")
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
-		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
+		document.getElementById(elementId).innerHTML = numbers2[n];
 	}
 	return shuffledNumbers;
 }

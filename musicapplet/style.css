@@ -45,7 +45,7 @@ html, body {
 }
 
 #button {
-	display:block;
+	display:inline;
     background:#DDD;
 	height:40px;
 	width:90px;

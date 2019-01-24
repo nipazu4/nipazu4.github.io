@@ -66,12 +66,12 @@
 
 	function outputNotes() {
 		for (y = 0; y < numbers.length; y++) {
-			return printNumbers()[y] + "+"
+			outputNotes += printNumbers()[y] + "+"
 		}
 	}
 
 	var row = document.getElementById("row");
-	var notes = 'X: 1\nL: 1/4\n' + outputNotes();
+	var notes = 'X: 1\nL: 1/4\n' + outputNotes;
 	
 	tuneObjectArray = ABCJS.renderAbc(
     row,

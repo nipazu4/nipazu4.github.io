@@ -87,8 +87,8 @@ var notenames = [
 ]
 
 var result = [];
-for(var i = 0; i < notenames.length; i++) {
-    result[i] = shuffledNumbers[notenames[i]];
+for(var i = 0; i < shuffledNumbers.length; i++) {
+    result[i] = notenames[shuffledNumbers[i]];
 }
 
 var notes = [

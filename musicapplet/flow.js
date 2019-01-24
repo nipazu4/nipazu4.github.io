@@ -50,7 +50,7 @@ system.addStave({
 });
 system2.addStave({
 	voices: [
-		score.voice(score.notes('B4/r/1, B4/r, B4/r', {stem: 'up'}))
+		score.voice(score.notes('B4/w, B4/w, B4/w', {stem: 'up'}))
 	]
 }).addClef('treble');
 

@@ -1,3 +1,5 @@
+const VF = Vex.Flow;
+
 var numbers = [
 	{number:1, tone:"E4"},
 	{number:2, tone:"F4"},
@@ -14,7 +16,6 @@ var numbers = [
 ];
 
 var n;
-
 function Shuffle(o) {
 	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;
@@ -40,7 +41,6 @@ function printNumbers() {
 }
 printNumbers();
 
-const VF = Vex.Flow;
 
 var vf = new VF.Factory({
   renderer: {elementId: 'row', width: 590, height: 160}

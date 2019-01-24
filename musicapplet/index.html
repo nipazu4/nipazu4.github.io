@@ -47,6 +47,7 @@
 	];
 
 	var n;
+	var y;
 	function Shuffle(o) {
 		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 		return o;
@@ -63,10 +64,14 @@
 	}
 	printNumbers();
 
-
+	function outputNotes() {
+		for (y = 0; y < numbers.length; y++) {
+			return printNumbers()[y] + "+"
+		}
+	}
 
 	var row = document.getElementById("row");
-	var notes = 'X: 1\nL: 1/4\n' + printNumbers()[0];
+	var notes = 'X: 1\nL: 1/4\n' + outputNotes();
 	
 	tuneObjectArray = ABCJS.renderAbc(
     row,

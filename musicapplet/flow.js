@@ -41,7 +41,7 @@ var system = vf.System(x: 10, y: 40, width: 580);
 
 system.addStave({
 	voices: [
-		score.voice(score.notes('C#5/q, B4, A4, G#4, C#5/q, B4, A4, G#4, C#5/q, B4, A4, G#4', {stem: 'up'}))
+		score.voice(score.notes('C#5/q, B4, A4, G#4, C#5, B4, A4, G#4, C#5, B4, A4, G#4', {stem: 'up'}))
 	]
 }).addClef('treble');
 

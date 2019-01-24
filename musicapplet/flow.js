@@ -72,7 +72,7 @@ var note11 = shuffledNumbers[10];
 var note12 = shuffledNumbers[11];
 
 var notenames = [
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+	'new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })',
 	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
 	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
 	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
@@ -93,7 +93,7 @@ for(var i = 0; i < shuffledNumbers.length; i++) {
 
 var notes = [
     result[0],
-    notenames[1],
+    notenames[0],
     notenames[2],
     notenames[3],
     notenames[4],

@@ -29,6 +29,7 @@ html, body {
 #midi {
 	margin: 5px;
 	float: left;
+	width:490px;
 }
 
 #numbercontainer {

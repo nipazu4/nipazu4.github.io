@@ -20,7 +20,7 @@ function Shuffle(o) {
 	return o;
 };
 
-shuffledNumbers = Shuffle(numbers);
+var shuffledNumbers = Shuffle(numbers);
 
 function printNumbers() {
 	for (n = 0; n < numbers.length; n++) {

@@ -1,16 +1,16 @@
 var numbers = [
-	{number:1, tone:'["e/4"]', accidental: 0},
-	{number:2, tone:'["f/4"]', accidental: 0},
-	{number:3, tone:'["f/4"]', accidental: 1},
-	{number:4, tone:'["g/4"]', accidental: 0},
-	{number:5, tone:'["g/4"]', accidental: 1},
-	{number:6, tone:'["a/4"]', accidental: 0},
-	{number:7, tone:'["a/4"]', accidental: 1},
-	{number:8, tone:'["b/4"]', accidental: 0},
-	{number:9, tone:'["c/4"]', accidental: 0},
-	{number:10, tone:'["c/4"]', accidental: 1},
-	{number:11, tone:'["d/4"]', accidental: 0},
-	{number:12, tone:'["d/4"]', accidental: 1}
+	{number:1, tone:'"e/4"', accidental: 0},
+	{number:2, tone:'"f/4"', accidental: 0},
+	{number:3, tone:'"f/4"', accidental: 1},
+	{number:4, tone:'"g/4"', accidental: 0},
+	{number:5, tone:'"g/4"', accidental: 1},
+	{number:6, tone:'"a/4"', accidental: 0},
+	{number:7, tone:'"a/4"', accidental: 1},
+	{number:8, tone:'"b/4"', accidental: 0},
+	{number:9, tone:'"c/4"', accidental: 0},
+	{number:10, tone:'"c/4"', accidental: 1},
+	{number:11, tone:'"d/4"', accidental: 0},
+	{number:12, tone:'"d/4"', accidental: 1}
 ];
 
 /*.addAccidental(0, new VF.Accidental("#"))*/
@@ -75,7 +75,7 @@ stave2.setContext(context).draw();
 printNumbers();
 
 var notes = [
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: [shuffledNumbers[0].tone], duration: "q" })
 ];
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

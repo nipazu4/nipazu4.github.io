@@ -28,7 +28,7 @@ function printNumbers() {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 	}
-	return shuffledNumbers;
+	return shuffledVoices;
 }
 printNumbers();
 
@@ -45,7 +45,7 @@ var system = vf.System({x: 110, y: 40, width: 475});
 
 system.addStave({
 	voices: [
-		score.voice(score.notes(shuffledVoices, {stem: 'up'}))
+		score.voice(score.notes(printNumbers(), {stem: 'up'}))
 	]
 });
 system2.addStave({

@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" type="text/css" href="/musicapplet/style.css">
+	<link rel="stylesheet" type="text/css" href="/musicapplet/abcjs_midi.css">
 	
 	<script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
 	<script src="/musicapplet/abcjs_midi_5.6.2_min.js"></script>
@@ -28,6 +29,7 @@
 			<div class="numberoutput" id="output11">x</div>
 		</div>
 		<button id="button" onclick="printNumbers()">Run</button>
+		<div class="abcjs-large"></div>
 	</div>
 </body>
 <script>
@@ -52,6 +54,29 @@
 		return o;
 	};
 
+	function renderMidi() {
+		abcjs.renderMidi(
+		"midi-id",
+		abcString,
+		{
+			qpm: 120,
+			inlineControls: {
+				tempo: true,
+			},
+		});
+
+	abcjs.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));
+
+	abcjs.midi.stopPlaying();
+
+	abcjs.midi.restartPlaying();
+
+	abcjs.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
+
+
+	//abcjs.midi.setSoundFont("");
+	}
+	
 	function printNumbers() {
 		shuffledNumbers = Shuffle(numbers);
 		shuffledVoices = shuffledNumbers.map(a => a.tone);

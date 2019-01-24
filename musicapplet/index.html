@@ -61,19 +61,21 @@
 			document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 		}
 		return shuffledVoices;
+		
+		var row = document.getElementById("row");
+		var notes = 'X: 1\nL: 1/4\n' + shuffledVoices[0] + shuffledVoices[1] + shuffledVoices[2] + shuffledVoices[3] + shuffledVoices[4] + shuffledVoices[5] + shuffledVoices[6] + shuffledVoices[7] + shuffledVoices[8] + shuffledVoices[9] + shuffledVoices[10] + shuffledVoices[11];
+		
+		tuneObjectArray = ABCJS.renderAbc(
+		row,
+		notes,
+		{
+			staffwidth: 580,
+			paddingtop: 0,
+			paddingbottom: 0,
+			paddingright: 5,
+			paddingleft: 5,
+		});
 	}
 
-	var row = document.getElementById("row");
-	var notes = 'X: 1\nL: 1/4\n' + shuffledVoices[0] + shuffledVoices[1] + shuffledVoices[2] + shuffledVoices[3] + shuffledVoices[4] + shuffledVoices[5] + shuffledVoices[6] + shuffledVoices[7] + shuffledVoices[8] + shuffledVoices[9] + shuffledVoices[10] + shuffledVoices[11];
-	
-	tuneObjectArray = ABCJS.renderAbc(
-    row,
-    notes,
-    {
-        staffwidth: 580,
-        paddingtop: 0,
-        paddingbottom: 0,
-        paddingright: 5,
-        paddingleft: 5,
-    });
+
 </script>

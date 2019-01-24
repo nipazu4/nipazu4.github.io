@@ -22,8 +22,7 @@ function Shuffle(o) {
 
 function printNumbers() {
 	const shuffledNumbers = Shuffle(numbers);
-	const shuffledVoices = shuffledNumbers.tone;
-	const shuffledVoices2 = "'" + shuffledVoices.join() + "'";
+	const shuffledVoices = shuffledNumbers.map(a => a.tone);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
@@ -47,7 +46,7 @@ var system = vf.System({x: 110, y: 40, width: 475});
 
 system.addStave({
 	voices: [
-		score.voice(score.notes(shuffledVoices2, {stem: 'up'}))
+		score.voice(score.notes(shuffledVoices, {stem: 'up'}))
 	]
 });
 system2.addStave({

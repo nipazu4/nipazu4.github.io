@@ -1,7 +1,7 @@
 const VF = Vex.Flow;
 
 var vf = new VF.Factory({
-  renderer: {elementId: 'boo', width: 500, height: 200}
+  renderer: {elementId: 'row', width: 590, height: 160}
 });
 
 var score = vf.EasyScore();

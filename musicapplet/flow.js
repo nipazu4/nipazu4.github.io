@@ -46,6 +46,8 @@ system.addStave({
 		score.voice(score.notes('E4/q, F4, F#4, G4, G#4, A4, A#4, B4, C5, C#5, D5, D#5', {stem: 'up'}), {time: "12/4"})
 	]
 });
-system2.addStave().addClef('treble');
+system2.addStave({voices: [
+		score.voice(), {time: "12/4"})
+	]}).addClef('treble');
 
 vf.draw();

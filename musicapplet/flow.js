@@ -49,7 +49,7 @@ system.addStave({
 });
 system2.addStave({
 	voices: [
-		score.voice(score.notes('r/h., r/h.', {stem: 'up'}))
+		score.voice(score.notes('B4/r/h., B4/r/h.', {stem: 'up'}))
 	]
 }).addClef('treble');
 

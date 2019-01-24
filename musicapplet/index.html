@@ -56,8 +56,8 @@
 
 	function renderMidi() {
 		abcjs.renderMidi(
-		"midi-id",
-		abcString,
+		midi,
+		notes,
 		{
 			qpm: 120,
 			inlineControls: {
@@ -98,6 +98,7 @@
 			paddingright: 5,
 			paddingleft: 5,
 		});
+		renderMidi();
 	}
 
 

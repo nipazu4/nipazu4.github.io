@@ -34,56 +34,42 @@ function printNumbers() {
 
 VF = Vex.Flow;
 
-// We created an object to store the information about the workspace
-var WorkspaceInformation = {
-    // The <div> element in which you're going to work
-    div: document.getElementById("row"),
-    // Vex creates a svg with specific dimensions
-    canvasWidth: 590,
-    canvasHeight: 160
-};
+// Create an SVG renderer and attach it to the DIV element named "boo".
+var vf = new Vex.Flow.Factory({
+    renderer: {
+        selector: 'row',
+        height: 160,
+        width: 590
+    }
+});
 
-// Create a renderer with SVG
-var renderer = new VF.Renderer(
-    WorkspaceInformation.div,
-    VF.Renderer.Backends.SVG
-);
+var score = vf.EasyScore();
+var system = vf.System();
 
-// Use the renderer to give the dimensions to the canvas
-renderer.resize(WorkspaceInformation.canvasWidth, WorkspaceInformation.canvasHeight);
+system.addStave({
+    voices: [
+        score.voice(score.notes('C#5/q, B4, A4, G#4', {
+            stem: 'up'
+        })),
+        score.voice(score.notes('C#4/h, C#4', {
+            stem: 'down'
+        }))
+    ]
+}).addClef('treble').addTimeSignature('4/4');
 
-// Expose the context of the renderer
-var context = renderer.getContext();
+system.addConnector();
 
-// And give some style to our canvas
-context.setFont("Lucida Console", 12, "").setBackgroundFillStyle("#eed");
+system.addStave({
+    voices: [
+        score.voice(score.notes('C#3/q, B2, A2/8, B2, C#3, D3', {
+            clef: 'bass',
+            stem: 'up'
+        })),
+        score.voice(score.notes('C#2/h, C#2', {
+            clef: 'bass',
+            stem: 'down'
+        }))
+    ]
+}).addClef('bass').addTimeSignature('4/4');
 
-
-/**
- * Creating a new stave
- */
-// Create a stave of width 400 at position x10, y40 on the canvas.
-var stave = new VF.Stave(5, 40, 105);
-var stave2 = new VF.Stave(110, 40, 475);
-
-// Add a clef and time signature.
-stave.addClef("treble");
-// Set the context of the stave our previous exposed context and execute the method draw !
-stave.setContext(context).draw();
-stave2.setContext(context).draw();
-
-printNumbers();
-
-var notes = [
-	new VF.StaveNote({clef: "treble", keys: [shuffledNumbers[0].tone], duration: "q" })
-];
-
-var voice = new VF.Voice({num_beats: 12,  beat_value: 4});
-voice.addTickables(notes);
-
-//Format and justify notes to 475 pixels
-var formatter = new VF.Formatter().joinVoices([voice]).format([voice], 475);
-
-// Render voice
-voice.draw(context, stave2);
-
+vf.draw();

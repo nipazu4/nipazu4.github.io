@@ -87,13 +87,13 @@ var notenames = [
 ]
 
 var result = [];
-for(var i = 0; i < array2.length; i++) {
+for(var i = 0; i < notenames.length; i++) {
     result[i] = shuffledNumbers[notenames[i]];
 }
 
 var notes = [
-    notenames[note1],
-    notenames[note2],
+    result[0],
+    notenames[1],
     notenames[2],
     notenames[3],
     notenames[4],

@@ -87,8 +87,8 @@ var notenames = [
 ]
 
 var notes = [
-    notenames[0],
-    notenames[1],
+    notenames[note1],
+    notenames[note2],
     notenames[2],
     notenames[3],
     notenames[4],

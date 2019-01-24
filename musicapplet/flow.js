@@ -75,7 +75,7 @@ stave2.setContext(context).draw();
 printNumbers();
 
 var notes = [
-	new VF.StaveNote({clef: "treble", keys: shuffledNumbers[0].tone, duration: "q" })
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })
 ];
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});

@@ -106,19 +106,8 @@ for(var i = 0; i < shuffledNumbers.length; i++) {
 }
 
 var notes = [
-    new notenames[0],
-    new notenames[0],
-    new notenames[2],
-    new notenames[3],
-    new notenames[4],
-    new notenames[5],
-    new notenames[6],
-    new notenames[7],
-    new notenames[8],
-    new notenames[9],
-    new notenames[10],
-    new notenames[11]
-]
+    new shuffledNumbers[0].tone
+];
 
 var voice = new VF.Voice({num_beats: 12,  beat_value: 4});
 voice.addTickables(notes);

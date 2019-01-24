@@ -49,7 +49,7 @@ var score = vf.EasyScore();
 score.set({time: "12/4"})
 
 var system2 = vf.System({x: 5, y: 40, width: 105});
-var system = vf.System({x: 110, y: 40, width: 475});
+const system = vf.System({x: 110, y: 40, width: 475});
 
 system.addStave({
 	voices: [

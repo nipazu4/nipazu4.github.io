@@ -1,16 +1,16 @@
 var numbers = [
-	{number:1, tone:'new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
-	{number:2, tone:'new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" })'},
-	{number:3, tone:'new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))'},
-	{number:4, tone:'new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" })'},
-	{number:5, tone:'new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))'},
-	{number:6, tone:'new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" })'},
-	{number:7, tone:'new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))'},
-	{number:8, tone:'new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" })'},
-	{number:9, tone:'new VF.StaveNote({clef: "treble", keys: ["c/4"], duration: "q" })'},
-	{number:10, tone:'new VF.StaveNote({clef: "treble", keys: ["c/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))'},
-	{number:11, tone:'new VF.StaveNote({clef: "treble", keys: ["d/4"], duration: "q" })'},
-	{number:12, tone:'new VF.StaveNote({clef: "treble", keys: ["d/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))'}
+	{number:1, tone: new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })},
+	{number:2, tone: new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" })},
+	{number:3, tone: new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))},
+	{number:4, tone: new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" })},
+	{number:5, tone: new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	{number:6, tone: new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" })},
+	{number:7, tone: new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))},
+	{number:8, tone: new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" })},
+	{number:9, tone: new VF.StaveNote({clef: "treble", keys: ["c/4"], duration: "q" })},
+	{number:10, tone: new VF.StaveNote({clef: "treble", keys: ["c/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))},
+	{number:11, tone: new VF.StaveNote({clef: "treble", keys: ["d/4"], duration: "q" })},
+	{number:12, tone: new VF.StaveNote({clef: "treble", keys: ["d/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))}
 ];
 
 var n;

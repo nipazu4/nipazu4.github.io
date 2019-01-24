@@ -28,6 +28,12 @@ function printNumbers() {
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 	}
 	
+	system.addStave({
+	voices: [
+		score.voice(score.notes(shuffledVoices, {stem: 'up'}))
+	]
+	});
+	
 	vf.draw();
 	return shuffledNumbers;
 }

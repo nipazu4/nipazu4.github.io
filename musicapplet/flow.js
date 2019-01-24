@@ -37,7 +37,7 @@ var vf = new VF.Factory({
 });
 
 var score = vf.EasyScore();
-var system = vf.System(x: 10, y: 40, width: 580);
+var system = vf.System({x: 10, y: 40, width: 580});
 
 system.addStave({
 	voices: [

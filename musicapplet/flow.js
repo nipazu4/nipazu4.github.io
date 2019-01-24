@@ -1,16 +1,16 @@
 var numbers = [
-	{number:1, tone:"", accidental: 0},
-	{number:2, tone:"", accidental: 0},
-	{number:3, tone:"", accidental: 1},
-	{number:4, tone:"", accidental: 0},
-	{number:5, tone:"", accidental: 1},
-	{number:6, tone:"", accidental: 0},
-	{number:7, tone:"", accidental: 1},
-	{number:8, tone:"", accidental: 0},
-	{number:9, tone:"", accidental: 0},
-	{number:10, tone:"", accidental: 1},
-	{number:11, tone:"", accidental: 0},
-	{number:12, tone:"", accidental: 1}
+	{number:1, tone:"E4"},
+	{number:2, tone:"F4"},
+	{number:3, tone:"F#4"},
+	{number:4, tone:"G4"},
+	{number:5, tone:"G#4"},
+	{number:6, tone:"A4"},
+	{number:7, tone:"A#4"},
+	{number:8, tone:"B4"},
+	{number:9, tone:"C5"},
+	{number:10, tone:"C#5"},
+	{number:11, tone:"D5"},
+	{number:12, tone:"D#5"}
 ];
 
 var n;

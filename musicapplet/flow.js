@@ -40,10 +40,9 @@ var score = vf.EasyScore();
 var system = vf.System();
 
 system.addStave({
-  voices: [
-    score.voice(score.notes('C#5/q, B4, A4, G#4', {stem: 'up'})),
-    score.voice(score.notes('C#4/h, C#4', {stem: 'down'}))
-  ]
+	voices: [
+		score.voice(score.notes('C#5/q, B4, A4, G#4', {stem: 'up'}))
+	]
 }).addClef('treble');
 
 vf.draw();

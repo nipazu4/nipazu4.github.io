@@ -72,19 +72,6 @@ stave2.setContext(context).draw();
 
 printNumbers();
 
-var note1 = shuffledNumbers[0];
-var note2 = shuffledNumbers[1];
-var note3 = shuffledNumbers[2];
-var note4 = shuffledNumbers[3];
-var note5 = shuffledNumbers[4];
-var note6 = shuffledNumbers[5];
-var note7 = shuffledNumbers[6];
-var note8 = shuffledNumbers[7];
-var note9 = shuffledNumbers[8];
-var note10 = shuffledNumbers[9];
-var note11 = shuffledNumbers[10];
-var note12 = shuffledNumbers[11];
-
 var notenames = [
 	VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
 	VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),

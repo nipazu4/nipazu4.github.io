@@ -23,7 +23,7 @@ html, body {
 #row {
 	display:block;
 	height:160px;
-	width:480px;
+	width:600px;
 }
 
 #numbercontainer {
@@ -38,8 +38,8 @@ html, body {
 	float:left;
     background:#DDD;
     padding:0;
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
 	margin:5px;
     text-align: center;
 }
@@ -47,7 +47,7 @@ html, body {
 #button {
 	display:block;
     background:#DDD;
-	height:30px;
+	height:40px;
 	width:100px;
     padding:0;
 	border:none;

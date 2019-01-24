@@ -41,7 +41,7 @@ var score = vf.EasyScore();
 score.set({ time: '12/4' });
 
 var system2 = vf.System({x: 5, y: 40, width: 105});
-var system = vf.System({x: 110, y: 40, width: 475})
+var system = vf.System({x: 110, y: 40, width: 475});
 system.addStave({
 	voices: [
 		score.voice(score.notes('C#5/q, B4, A4, G#4, C#5, B4, A4, G#4, C#5, B4, A4, G#4', {stem: 'up'}))

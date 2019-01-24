@@ -28,6 +28,7 @@ function printNumbers() {
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 	}
 	
+	var system = vf.System({x: 110, y: 40, width: 475});
 	system.addStave({
 	voices: [
 		score.voice(score.notes(shuffledVoices, {stem: 'up'}))
@@ -49,7 +50,7 @@ var score = vf.EasyScore();
 score.set({time: "12/4"})
 
 var system2 = vf.System({x: 5, y: 40, width: 105});
-const system = vf.System({x: 110, y: 40, width: 475});
+var system = vf.System({x: 110, y: 40, width: 475});
 
 system.addStave({
 	voices: [

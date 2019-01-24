@@ -143,7 +143,7 @@
 
 /* Adding the class "abcjs-large" will make the control easier on a touch device. */
 .abcjs-large .abcjs-inline-midi {
-	height: 52px;
+	height: 40px;
 }
 .abcjs-large .abcjs-btn {
 	width: 56px;

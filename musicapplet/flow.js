@@ -1,19 +1,17 @@
 var numbers = [
-	{number:1, tone:'"e/4"', accidental: 0},
-	{number:2, tone:'"f/4"', accidental: 0},
-	{number:3, tone:'"f/4"', accidental: 1},
-	{number:4, tone:'"g/4"', accidental: 0},
-	{number:5, tone:'"g/4"', accidental: 1},
-	{number:6, tone:'"a/4"', accidental: 0},
-	{number:7, tone:'"a/4"', accidental: 1},
-	{number:8, tone:'"b/4"', accidental: 0},
-	{number:9, tone:'"c/4"', accidental: 0},
-	{number:10, tone:'"c/4"', accidental: 1},
-	{number:11, tone:'"d/4"', accidental: 0},
-	{number:12, tone:'"d/4"', accidental: 1}
+	{number:1, tone:"", accidental: 0},
+	{number:2, tone:"", accidental: 0},
+	{number:3, tone:"", accidental: 1},
+	{number:4, tone:"", accidental: 0},
+	{number:5, tone:"", accidental: 1},
+	{number:6, tone:"", accidental: 0},
+	{number:7, tone:"", accidental: 1},
+	{number:8, tone:"", accidental: 0},
+	{number:9, tone:"", accidental: 0},
+	{number:10, tone:"", accidental: 1},
+	{number:11, tone:"", accidental: 0},
+	{number:12, tone:"", accidental: 1}
 ];
-
-/*.addAccidental(0, new VF.Accidental("#"))*/
 
 var n;
 
@@ -32,44 +30,20 @@ function printNumbers() {
 }
 
 
-VF = Vex.Flow;
+const VF = Vex.Flow;
 
-// Create an SVG renderer and attach it to the DIV element named "boo".
-var vf = new Vex.Flow.Factory({
-    renderer: {
-        selector: 'row',
-        height: 160,
-        width: 590
-    }
+var vf = new VF.Factory({
+  renderer: {elementId: 'row', width: 590, height: 160}
 });
 
 var score = vf.EasyScore();
 var system = vf.System();
 
 system.addStave({
-    voices: [
-        score.voice(score.notes('C#5/q, B4, A4, G#4', {
-            stem: 'up'
-        })),
-        score.voice(score.notes('C#4/h, C#4', {
-            stem: 'down'
-        }))
-    ]
+  voices: [
+    score.voice(score.notes('C#5/q, B4, A4, G#4', {stem: 'up'})),
+    score.voice(score.notes('C#4/h, C#4', {stem: 'down'}))
+  ]
 }).addClef('treble').addTimeSignature('4/4');
-
-system.addConnector();
-
-system.addStave({
-    voices: [
-        score.voice(score.notes('C#3/q, B2, A2/8, B2, C#3, D3', {
-            clef: 'bass',
-            stem: 'up'
-        })),
-        score.voice(score.notes('C#2/h, C#2', {
-            clef: 'bass',
-            stem: 'down'
-        }))
-    ]
-}).addClef('bass').addTimeSignature('4/4');
 
 vf.draw();

@@ -1,42 +1,13 @@
 var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 var n;
 
-VF = Vex.Flow;
-
-var notenames = [
-	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
-	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }),
-	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))
-]
-
-
-function Shuffle(obj1, obj2) {
-  var index = obj1.length;
-  var rnd, tmp1, tmp2;
-
-  while (index) {
-    rnd = Math.floor(Math.random() * index);
-    index -= 1;
-    tmp1 = obj1[index];
-    tmp2 = obj2[index];
-    obj1[index] = obj1[rnd];
-    obj2[index] = obj2[rnd];
-    obj1[rnd] = tmp1;
-    obj2[rnd] = tmp2;
-  }
-}
+function Shuffle(o) {
+	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+	return o;
+};
 
 function printNumbers() {
-	shuffledNumbers = Shuffle(numbers, notenames);
+	shuffledNumbers = Shuffle(numbers);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n];
@@ -44,6 +15,8 @@ function printNumbers() {
 	return shuffledNumbers;
 }
 
+
+VF = Vex.Flow;
 
 // We created an object to store the information about the workspace
 var WorkspaceInformation = {
@@ -98,10 +71,29 @@ var note10 = shuffledNumbers[9];
 var note11 = shuffledNumbers[10];
 var note12 = shuffledNumbers[11];
 
+var notenames = [
+	new VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["f/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["g/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["a/4"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	new VF.StaveNote({clef: "treble", keys: ["b/4"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["c/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#")),
+	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }),
+	new VF.StaveNote({clef: "treble", keys: ["d/5"], duration: "q" }).addAccidental(0, new VF.Accidental("#"))
+]
+
+var result = [];
+for(var i = 0; i < array2.length; i++) {
+    result[i] = shuffledNumbers[notenames[i]];
+}
 
 var notes = [
-    notenames["note1"],
-    notenames["note2"],
+    notenames[note1],
+    notenames[note2],
     notenames[2],
     notenames[3],
     notenames[4],

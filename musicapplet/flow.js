@@ -20,8 +20,9 @@ function Shuffle(o) {
 	return o;
 };
 
+shuffledNumbers = Shuffle(numbers);
+
 function printNumbers() {
-	shuffledNumbers = Shuffle(numbers);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;

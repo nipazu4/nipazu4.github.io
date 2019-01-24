@@ -23,7 +23,7 @@ html, body {
 #row {
 	display:block;
 	height:160px;
-	width:590px;
+	width:480px;
 }
 
 #numbercontainer {
@@ -46,7 +46,6 @@ html, body {
 
 #button {
 	display:block;
-	float:left;
     background:#DDD;
 	height:30px;
 	width:100px;

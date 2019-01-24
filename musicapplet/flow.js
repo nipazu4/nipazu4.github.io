@@ -72,11 +72,6 @@ stave2.setContext(context).draw();
 
 printNumbers();
 
-/*var result = [];
-for(var i = 0; i < shuffledNumbers.length; i++) {
-    result[i] = notenames[shuffledNumbers[i]];
-}*/
-
 var notes = [
     shuffledNumbers[0].tone
 ];

@@ -47,7 +47,7 @@ system.addStave({
 	]
 });
 system2.addStave({voices: [
-		score.voice(), {time: "12/4"})
+		score.voice(), {time: "0/4"})
 	]}).addClef('treble');
 
 vf.draw();

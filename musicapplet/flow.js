@@ -1,4 +1,18 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+var numbers = [
+	{number:1, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:2, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:3, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:4, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:5, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:6, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:7, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:8, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:9, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:10, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:11, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'},
+	{number:12, tone:'VF.StaveNote({clef: "treble", keys: ["e/4"], duration: "q" })'}
+];
+
 var n;
 
 function Shuffle(o) {
@@ -7,7 +21,7 @@ function Shuffle(o) {
 };
 
 function printNumbers() {
-	shuffledNumbers = Shuffle(numbers);
+	shuffledNumbers = Shuffle(numbers.number);
 	for (n = 0; n < numbers.length; n++) {
 		var elementId = "output" + n;
 		document.getElementById(elementId).innerHTML = shuffledNumbers[n];

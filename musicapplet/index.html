@@ -49,31 +49,25 @@
 		{number:12, tone:"^d"}
 	];
 
-	var n;
 	function Shuffle(o) {
 		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 		return o;
 	};
 
 	function printNumbers() {
-	
 		shuffledNumbers = Shuffle(numbers);
 		shuffledVoices = shuffledNumbers.map(a => a.tone);
 
 		var row = document.getElementById("row");
 		var notes = 'X: 1\nL: 1/4\n'
 		
-		
 		for (n = 0; n < numbers.length; n++) {
 			var elementId = "output" + n;
 			document.getElementById(elementId).innerHTML = shuffledNumbers[n].number;
 			notes += " " + shuffledVoices[n];
-		}	
-		for (n = 0; n < numbers.length; n++) {
-			
 		}
 		
-		tuneObjectArray = ABCJS.renderAbc(
+		ABCJS.renderAbc(
 		row,
 		notes,
 		{
@@ -84,7 +78,6 @@
 			paddingleft: 5,
 		});
 
-		
 		ABCJS.renderMidi(
 		midi,
 		notes,

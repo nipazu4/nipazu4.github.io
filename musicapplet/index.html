@@ -64,7 +64,11 @@
 		}
 
 		var row = document.getElementById("row");
-		var notes = 'X: 1\nL: 1/4\n' + shuffledVoices[0] + shuffledVoices[1] + shuffledVoices[2] + shuffledVoices[3] + shuffledVoices[4] + shuffledVoices[5] + shuffledVoices[6] + shuffledVoices[7] + shuffledVoices[8] + shuffledVoices[9] + shuffledVoices[10] + shuffledVoices[11];
+		
+		for (n = 0; n < numbers.length; n++) {
+			var notes = 'X: 1\nL: 1/4\n';
+			notes += "+" + shuffledVoices[n];
+		}
 		
 		tuneObjectArray = ABCJS.renderAbc(
 		row,

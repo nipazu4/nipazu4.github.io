@@ -33,19 +33,19 @@
 		{number:12, tone:"^d"}
 	];
 
-	for (n = 0; n < numbers.length; n++) {
+	for (n = 0; n < numbers.length; n++)	{
 		var outputDiv = document.createElement("div");
 		outputDiv.className = "numberoutput";
 		outputDiv.innerHTML = "x";
 		document.getElementById("numbercontainer").appendChild(outputDiv);
 	}
 	
-	function Shuffle(o) {
+	function Shuffle(o)	{
 		for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 		return o;
 	};
 
-	function printNumbers() {
+	function printNumbers()	{
 		shuffledNumbers = Shuffle(numbers);
 		shuffledVoices = shuffledNumbers.map(a => a.tone);
 
@@ -53,11 +53,11 @@
 		var notes = 'X: 1\nL: 1/4\n';
 		var thingToRemove = document.getElementsByClassName("numberoutput");
 		
-		while (thingToRemove[0]) {
+		while (thingToRemove[0])	{
 			thingToRemove[0].parentNode.removeChild(thingToRemove[0])
 		}
 
-		for (n = 0; n < numbers.length; n++) {
+		for (n = 0; n < numbers.length; n++)	{
 			var outputDiv = document.createElement("div");
 			outputDiv.className = "numberoutput";
 			outputDiv.innerHTML = shuffledNumbers[n].number;

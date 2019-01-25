@@ -67,9 +67,7 @@
 			notes += " " + shuffledVoices[n];
 		}
 		
-		ABCJS.renderAbc(
-		row,
-		notes,
+		ABCJS.renderAbc(row, notes, 
 		{
 			staffwidth: 590,
 			paddingtop: 0,
@@ -78,11 +76,9 @@
 			paddingleft: 5,
 		});
 
-		ABCJS.renderMidi(
-		midi,
-		notes,
+		ABCJS.renderMidi(midi, notes, 
 		{
-			qpm: 120,
+			qpm: 100
 			inlineControls: {
 				tempo: false,
 				startPlaying: false
@@ -90,11 +86,8 @@
 		});
 
 		/*ABCJS.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));*/
-
 		ABCJS.midi.stopPlaying();
-
 		ABCJS.midi.restartPlaying();
-
 		ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
 	}
 </script>

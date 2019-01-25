@@ -60,8 +60,8 @@
 
 		var row = document.getElementById("row");
 		var notes = 'X: 1\nL: 1/4\n';
-		
 		var thingToRemove = document.getElementsByClassName("numberoutput");
+		
 		while (thingToRemove[0]) {
 			thingToRemove[0].parentNode.removeChild(thingToRemove[0])
 		}
@@ -94,7 +94,6 @@
 			},
 		});
 
-		/*ABCJS.midi.startPlaying(document.querySelector(".abcjs-inline-midi"));*/
 		ABCJS.midi.stopPlaying();
 		ABCJS.midi.restartPlaying();
 		ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);

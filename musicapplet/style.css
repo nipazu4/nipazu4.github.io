@@ -38,7 +38,7 @@ html, body {
 #numbercontainer {
 	display:inline-block;
 	width:auto;
-	height:auto;
+	height:50px;
 	float:left;
 }
 

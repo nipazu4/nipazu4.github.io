@@ -72,7 +72,6 @@ html, body {
 }
 #container button:focus {
 	outline:0;
-}
-#container button:active {
-	background:#add8e6;
+	background:#c6c6c6;
+
 }

@@ -70,9 +70,9 @@ html, body {
 	border-radius:4px;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-#button:focus {
+#container button:focus {
 	outline:0;
 }
-#button:active {
+#container button:active {
 	background:#add8e6;
 }

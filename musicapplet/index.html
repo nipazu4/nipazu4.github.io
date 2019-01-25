@@ -61,6 +61,9 @@
 		var row = document.getElementById("row");
 		var notes = 'X: 1\nL: 1/4\n';
 		
+		var thingToRemove = document.querySelectorAll(".numberoutput")[0];
+		thingToRemove.parentNode.removeChild(thingToRemove);
+		
 		for (n = 0; n < numbers.length; n++) {
 			var outputDiv = document.createElement("div");
 			outputDiv.id = "output" + n;

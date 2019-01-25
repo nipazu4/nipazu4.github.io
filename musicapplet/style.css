@@ -50,7 +50,7 @@ html, body {
     width:40px;
     height:40px;
 	margin:5px;
-	border-radius:2px;
+	border-radius:4px;
 }
 
 #button {
@@ -64,5 +64,5 @@ html, body {
 	margin:5px;
     text-align:center;	
 	font-family:inherit;
-	border-radius:2px;
+	border-radius:4px;
 }

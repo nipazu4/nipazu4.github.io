@@ -61,7 +61,7 @@
 		var row = document.getElementById("row");
 		var notes = 'X: 1\nL: 1/4\n'
 		
-		document.getElementsByClassName("numberoutput").remove();
+		document.getElementsByClassName("numberoutput").outerHTML = "";
 		
 		for (n = 0; n < numbers.length; n++) {
 			var outputDiv = document.createElement("div");

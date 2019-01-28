@@ -18,27 +18,23 @@ html, body {
 	border-radius:4px;
 	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-
 #row {
 	display:block;
 	float:left;
 	height:85px;
 	width:600px;
 }
-
 #midi {
 	margin:5px;
 	float:left;
 	width:490px;
 }
-
 #numbercontainer {
 	display:inline-block;
 	width:auto;
 	height:50px;
 	float:left;
 }
-
 .numberoutput {
 	display:flex;
 	justify-content:center;

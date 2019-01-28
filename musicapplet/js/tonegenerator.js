@@ -10,8 +10,7 @@ var numbers = [
 	{number:9, tone:"=c"},
 	{number:10, tone:"^c"},
 	{number:11, tone:"=d"},
-	{number:12, tone:"^d"},
-	{number:13, tone:"_e"}
+	{number:12, tone:"^d"}
 ];
 
 for (n = 0; n < numbers.length; n++)	{

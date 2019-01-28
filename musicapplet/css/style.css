@@ -27,6 +27,7 @@ html, body {
 	margin:5px;
 	float:left;
 	width:490px;
+	height:85px;
 }
 #numbercontainer {
 	display:inline-block;

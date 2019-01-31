@@ -39,12 +39,15 @@ function Shuffle(o)	{
 	return o;
 };
 
+var amountOfNotes = //?
+
 //L = 1/16
 function createRhythm()	{
 	shuffledValues = Shuffle(rhythmValues);
 	
 	
-	while( != 16)	{
+	for(i = 0; i < amountOfNotes; i++)	{
+		
 		
 	}
 }

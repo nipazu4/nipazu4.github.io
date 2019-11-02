@@ -31,11 +31,6 @@ html, body {
 	background-color: #fff1d4;
 	background-image: url("paper-fibers.png");
 }
-#midi {
-	margin:5px;
-	float:left;
-	width:490px;
-}
 #numbercontainer {
 	display:none;
 }

@@ -13,13 +13,6 @@ var numbers = [
 	{number:12, tone:"^d"}
 ];
 
-for (n = 0; n < numbers.length; n++)	{
-	var outputDiv = document.createElement("div");
-	outputDiv.className = "numberoutput";
-	outputDiv.innerHTML = "x";
-	document.getElementById("numbercontainer").appendChild(outputDiv);
-}
-
 function Shuffle(o)	{
 	for(var j, x, i = o.length; i; j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
 	return o;

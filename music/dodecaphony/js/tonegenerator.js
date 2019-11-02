@@ -49,6 +49,6 @@ function printNumbers()	{
 		paddingbottom: 5,
 		paddingright: 5,
 		paddingleft: 5,
-		responsive:resize,
+		responsive:"resize",
 	});
 }

@@ -16,7 +16,8 @@ html, body {
 	width:600px;
 	background-color: #fff1d4;
 	background-image: url("paper-fibers.png");
-	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */	margin:auto;
+	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+	margin:auto;
 	overflow:hidden;
 	padding:5px;
 	border-radius:5px;

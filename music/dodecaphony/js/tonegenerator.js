@@ -38,10 +38,7 @@ function printNumbers()	{
 	}
 
 	for (n = 0; n < numbers.length; n++)	{
-		var outputDiv = document.createElement("div");
-		outputDiv.className = "numberoutput";
-		outputDiv.innerHTML = shuffledNumbers[n].number;
-		document.getElementById("numbercontainer").appendChild(outputDiv);
+
 		notes += " " + shuffledVoices[n];
 	}
 	

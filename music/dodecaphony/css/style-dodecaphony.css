@@ -34,13 +34,7 @@ html, body {
 	width:490px;
 }
 #numbercontainer {
-	display:hidden;
-}
-.numberoutput {
-	display:flex;
-	justify-content:center;
-	align-items:center;
-    width:40px;
+	display:none;
 }
 #button {
 	display:inline;
@@ -49,7 +43,7 @@ html, body {
     text-align:center;	
 	font-family:inherit;
 }
-#button, .numberoutput {
+#button,{
 	float:left;
 	background:#DDD;
 	height:40px;

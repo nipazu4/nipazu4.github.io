@@ -53,17 +53,4 @@ function printNumbers()	{
 		paddingright: 5,
 		paddingleft: 5,
 	});
-
-	ABCJS.renderMidi(midi, notes,
-	{
-		qpm: 100,
-		inlineControls: {
-			tempo: false,
-			startPlaying: false
-		},
-	});
-
-	ABCJS.midi.stopPlaying();
-	ABCJS.midi.restartPlaying();
-	ABCJS.midi.setLoop(document.querySelector(".abcjs-inline-midi"), true);
 }

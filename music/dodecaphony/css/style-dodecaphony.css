@@ -14,8 +14,8 @@ html, body {
 	left:50%;
 	transform:translate(-50%, -50%);
 	width:600px;
-	background-color: #fff1d4;
-	background-image: url("paper-fibers.png");
+	height:250px;
+
 	/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 	margin:auto;
 	overflow:hidden;
@@ -28,6 +28,8 @@ html, body {
 	float:left;
 	width:600px;
 	height:100px;
+	background-color: #fff1d4;
+	background-image: url("paper-fibers.png");
 }
 #midi {
 	margin:5px;
@@ -43,6 +45,8 @@ html, body {
 	border:none;
     text-align:center;	
 	font-family:inherit;
+	background-color: #fff1d4;
+	background-image: url("paper-fibers.png");
 }
 #button,{
 	float:left;

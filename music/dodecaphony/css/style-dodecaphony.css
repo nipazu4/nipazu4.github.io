@@ -35,8 +35,9 @@ html, body {
 	display:none;
 }
 #button {
-	display:inline;
+	display:block;
 	width:90px;
+	height:
 	border:none;
     text-align:center;	
 	font-family:inherit;

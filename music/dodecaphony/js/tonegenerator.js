@@ -45,9 +45,10 @@ function printNumbers()	{
 	ABCJS.renderAbc(row, notes,
 	{
 		staffwidth: 590,
-		paddingtop: 0,
-		paddingbottom: 0,
+		paddingtop: 5,
+		paddingbottom: 5,
 		paddingright: 5,
 		paddingleft: 5,
+		responsive:resize,
 	});
 }

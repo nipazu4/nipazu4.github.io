@@ -34,10 +34,7 @@ html, body {
 	width:490px;
 }
 #numbercontainer {
-	display:inline-block;
-	width:auto;
-	height:50px;
-	float:left;
+	display:hidden;
 }
 .numberoutput {
 	display:flex;

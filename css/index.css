@@ -1,3 +1,4 @@
+
 body{
     margin:0;
     height:100%
@@ -48,9 +49,8 @@ body{
 
     #paper{
         height:95%;
-        margin-top:auto;
-        margin-bottom: auto;
-        width:600px;
+        align-self:center;
+        width:60%;
         background-color: white;
         border-radius:5px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -61,7 +61,8 @@ body{
     #nav{
         position:relative;
         height:95%;
-        margin: auto 20px auto 0px;
+        align-self:center;
+        margin-right:20px;
         width: 150px;
         border-radius:5px;
     }

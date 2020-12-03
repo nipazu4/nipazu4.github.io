@@ -1,4 +1,3 @@
-
 body{
     margin:0;
     height:100%
@@ -12,6 +11,10 @@ body{
     background-color: rgb(51, 51, 51);
 }
 
+#nav{
+    flex-shrink: 0;
+}
+
 @media only screen and (max-width: 900px){
     #nav{
         height:10%;
@@ -20,12 +23,16 @@ body{
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
 
-    #paper{
-        position:relative;
+    #content{
         align-self:center;
-        height:90%;
         width:90%;
-        margin:5% 0;
+        height:100%;
+        padding: 5% 0px;
+    }
+
+    #paper{
+        height:100%;
+        width:100%;
         background-color: white;
         border-radius:5px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -35,21 +42,24 @@ body{
 @media only screen and (min-width: 900px){
     #container{
         flex-direction: row;
-        justify-content: center;
     }
 
     #nav{
-        position:absolute;
-        left:0px;top:0px;
         height:100%;
         width: 120px;
         background-color: white;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     }
 
-    #paper{
+    #content{
+        width:100%;
         height:95%;
         align-self:center;
+    }
+
+    #paper{
+        margin:auto;
+        height:100%;
         width:60%;
         background-color: white;
         border-radius:5px;
@@ -57,17 +67,14 @@ body{
     }
 }
 
-@media only screen and (min-width: 1366px){
-    #nav{
-        position:relative;
-        height:95%;
-        align-self:center;
-        margin-right:20px;
-        width: 150px;
-        border-radius:5px;
+@media only screen and (min-width: 1300px){
+    #paper{
+        width:750px;
     }
+}
 
-    #paper{ 
+@media only screen and (min-width: 2000px){
+    #paper{
         width:900px;
     }
 }

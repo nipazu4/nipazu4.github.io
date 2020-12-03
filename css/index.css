@@ -14,7 +14,7 @@ body{
 
 @media only screen and (max-device-width: 900px){
     #nav{
-        left:0px;top:0px;
+        left:0px;bottom:0px;
         height:8%;
         width: 100%;
         background-color: white;

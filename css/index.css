@@ -56,7 +56,7 @@ body{
         border-radius:5px;
         height:95%;
         align-self:center;
-        width: 150px;
+        width: 120px;
         margin:20px;
         flex-shrink: 0;
     }
@@ -76,7 +76,7 @@ body{
 
     @supports(aspect-ratio:196418/317811){
         #content{
-            aspect-ratio: 196418/317811;
+            aspect-ratio: 1/1.414;
             width:auto;
         }
     }
@@ -88,7 +88,7 @@ body{
     }
     @supports(aspect-ratio:196418/317811){
         #content{
-            aspect-ratio: 196418/317811;
+            aspect-ratio: 1/1.414;
             width:auto;
         }
     }

@@ -8,14 +8,41 @@
         <div id="container">
             <div id="nav">
                 <ul>
-                    <li><a>Nappi 1</a></li>
-                    <li><a>Tähän hieman pidempi teksti</a></li>
+                    <li><a onclick="nayta(etusivu)">Etusivulle</a></li>
+                    <li><a onclick="nayta(kalenteri)">Kalenteri</a></li>
+                    <li><a onclick="nayta()">Tähän hieman pidempi teksti</a></li>
                     <li><a>Nappi 3</a></li>
                 </ul>
             </div>
             <div id="content">
-                <iframe id="paper" src="https://calendar.google.com/calendar/embed?src=8kc8lpkeiikm9en2mrtfmi0cvs%40group.calendar.google.com&ctz=Europe%2FHelsinki" frameborder="0" scrolling="no"></iframe>
+                <div id="paper">
+                    <iframe class="child" id="etusivu" style="display:block" src="etusivu.html" frameborder="0"></iframe>
+                    <iframe class="child" id="kalenteri" src="https://calendar.google.com/calendar/embed?src=8kc8lpkeiikm9en2mrtfmi0cvs%40group.calendar.google.com&ctz=Europe%2FHelsinki" frameborder="0" ></iframe>
+                </div>
             </div>
         </div>
     </body>
 </html>
+
+<script>
+function nayta(komento) {
+    var luokat = document.getElementsByClassName("child"),
+    i=0,
+    l=luokat.length;
+
+    for(i; i<l; i++){
+        luokat[i].style.display="none";
+    }
+
+    switch(komento){
+        case etusivu:
+            document.getElementById("etusivu").style.display = "block";
+            break;
+        case kalenteri:
+            document.getElementById("kalenteri").style.display = "block";
+            break;
+        default:
+            break;
+    }
+}
+</script>

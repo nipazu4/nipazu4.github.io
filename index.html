@@ -8,8 +8,8 @@
         <div id="container">
             <div id="nav">
                 <ul>
-                    <li><a onclick="nayta(etusivu)">Etusivulle</a></li>
-                    <li><a onclick="nayta(kalenteri)">Kalenteri</a></li>
+                    <li><a onclick="nayta('etusivu')">Etusivulle</a></li>
+                    <li><a onclick="nayta('kalenteri')">Kalenteri</a></li>
                     <li><a onclick="nayta()">Tähän hieman pidempi teksti</a></li>
                     <li><a>Nappi 3</a></li>
                 </ul>
@@ -33,16 +33,6 @@ function nayta(komento) {
     for(i; i<l; i++){
         luokat[i].style.display="none";
     }
-
-    switch(komento){
-        case etusivu:
-            document.getElementById("etusivu").style.display = "block";
-            break;
-        case kalenteri:
-            document.getElementById("kalenteri").style.display = "block";
-            break;
-        default:
-            break;
-    }
+    document.getElementById(komento).style.display = "block";
 }
 </script>

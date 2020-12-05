@@ -57,12 +57,14 @@ body{
         height:95%;
         align-self:center;
         width: 150px;
-        margin-right:20px;
+        margin:20px;
+        flex-shrink: 0;
     }
 
     #content{
         width:600px;
         height:95%;
+        margin-right: 20px;
         align-self:center;
     }
 
@@ -71,16 +73,35 @@ body{
         height:100%;
         width:100%;
     }
+
+    @supports(aspect-ratio:196418/317811){
+        #content{
+            aspect-ratio: 196418/317811;
+            width:auto;
+        }
+    }
 }
 
 @media only screen and (min-width: 1300px){
     #content{
         width:750px;
     }
+    @supports(aspect-ratio:196418/317811){
+        #content{
+            aspect-ratio: 196418/317811;
+            width:auto;
+        }
+    }
 }
 
 @media only screen and (min-width: 2000px){
     #content{
         width:900px;
+    }
+    @supports(aspect-ratio:196418/317811){
+        #content{
+            aspect-ratio: 196418/317811;
+            width:auto;
+        }
     }
 }

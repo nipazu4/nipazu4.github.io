@@ -24,6 +24,7 @@ body{
     position:relative;
     text-decoration: none;
     color: black;
+    transition: .2s;
 }
 
 #nav ul li:hover a{

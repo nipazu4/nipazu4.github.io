@@ -1,6 +1,7 @@
 body{
     margin:0;
-    height:100%
+    height:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #container{
@@ -58,6 +59,10 @@ body{
         border-right: 1px solid rgb(51, 51, 51);
     }
 
+    #nav ul li:hover a{
+        background-color: rgb(196, 146, 21);
+    }
+
     #content{
         align-self:center;
         width:90%;
@@ -84,6 +89,42 @@ body{
         width: 120px;
         margin:20px;
         flex-shrink: 0;
+    }
+
+    #nav ul{
+        list-style-type: none;
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+
+    #nav ul li a{
+        padding: 20px;
+        text-align: center;
+        background-color: goldenrod;
+        position: relative;
+        display: block;
+    }
+
+    #nav ul li:not(:last-child) a:after{
+        content:"";
+        position: absolute;
+        left: 15%;
+        bottom: 0px;
+        width: 70%;
+        border-bottom: 1px solid rgb(51, 51, 51);
+    }
+
+    #nav ul li:first-child a{
+        border-radius: 4px 4px 0 0;
+    }
+
+    #nav ul li:last-child a{
+        border-radius: 0 0 4px 4px;
+    }
+
+    #nav ul li:hover a{
+        background-color: rgb(196, 146, 21);
     }
 
     #content{

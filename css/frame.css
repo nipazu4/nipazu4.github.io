@@ -17,7 +17,11 @@ body{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#nav ul li a{
+#buttons{
+    background-color: rgb(192, 91, 91);
+}
+
+#buttons ul li a{
     display:block;
     padding: 25px 12px;
     background-color: rgb(192, 91, 91);
@@ -27,7 +31,7 @@ body{
     transition: .2s;
 }
 
-#nav ul li:hover a{
+#buttons ul li:hover a{
     background-color:rgb(158, 59, 59);
 }
 
@@ -57,7 +61,7 @@ body{
         display:inline;
     }
 
-    #nav ul{
+    #buttons ul{
         list-style-type: none;
         display:inline-flex;
         width: 100%;
@@ -65,7 +69,7 @@ body{
         margin:0;
     }
 
-    #nav ul li:not(:last-child) a:after{
+    #buttons ul li:not(:last-child) a:after{
         content:"";
         position:absolute;
         right:0px;
@@ -96,21 +100,33 @@ body{
         width: 120px;
         margin:20px;
         flex-shrink: 0;
+        overflow:auto;
     }
 
-    #nav ul{
+    #nav::-webkit-scrollbar{
+        width: 0.5em;
+        background-color: darkgrey;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    #nav::-webkit-scrollbar-thumb{
+        border-radius: 5px;
+        background-color: rgb(114, 114, 114);
+    }
+
+    #buttons ul{
         list-style-type: none;
         padding:0;
         margin:0;
         width:100%;
     }
 
-    #nav ul li a{
+    #buttons ul li a{
         text-align: center;
         overflow:hidden;
     }
 
-    #nav ul li:not(:last-child) a:after{
+    #buttons ul li:not(:last-child) a:after{
         content:"";
         position: absolute;
         left: 15%;
@@ -119,11 +135,11 @@ body{
         border-bottom: 1px solid rgb(51, 51, 51);
     }
 
-    #nav ul li:first-child a{
+    #buttons ul li:first-child a{
         border-radius: 5px 5px 0 0;
     }
 
-    #nav ul li:last-child a{
+    #buttons ul li:last-child a{
         border-radius: 0 0 5px 5px;
     }
 

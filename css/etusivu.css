@@ -1,0 +1,14 @@
+body::-webkit-scrollbar{
+    width: 0.5em;
+    background-color: darkgrey;
+}
+
+body::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(114, 114, 114);
+}
+
+body{
+    scrollbar-width: 0.5em;
+    scrollbar-color: darkgrey  rgb(114, 114, 114);
+}

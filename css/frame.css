@@ -17,14 +17,10 @@ body{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
-#buttons{
-    background-color: rgb(192, 91, 91);
-}
-
 #buttons ul li a{
     display:block;
     padding: 25px 12px;
-    background-color: rgb(192, 91, 91);
+    background-color: rgb(212, 60, 60);
     position:relative;
     text-decoration: none;
     color: black;
@@ -99,17 +95,23 @@ body{
         align-self:center;
         width: 120px;
         margin:20px;
-        flex-shrink: 0;
         overflow:auto;
+        position:relative;
+        display:flex;
+        flex-direction: column;
     }
 
-    #nav::-webkit-scrollbar{
+    #buttons{
+        overflow:auto;
+        position:relative;
+    }
+
+    #buttons::-webkit-scrollbar{
         width: 0.5em;
         background-color: darkgrey;
-        border-radius: 0 5px 5px 0;
     }
     
-    #nav::-webkit-scrollbar-thumb{
+    #buttons::-webkit-scrollbar-thumb{
         border-radius: 5px;
         background-color: rgb(114, 114, 114);
     }
@@ -135,12 +137,31 @@ body{
         border-bottom: 1px solid rgb(51, 51, 51);
     }
 
-    #buttons ul li:first-child a{
-        border-radius: 5px 5px 0 0;
+    #logobox{
+        margin-top:auto;
+        text-align: center;
+        background-color: rgb(212, 60, 60);
+        position:relative;
+        box-shadow: 0 16px 24px 8px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20);
     }
 
-    #buttons ul li:last-child a{
-        border-radius: 0 0 5px 5px;
+    #logobox:after{
+        content:"";
+        position: absolute;
+        left: 15%;
+        top: 0px;
+        width: 70%;
+        border-top: 1px solid rgb(51, 51, 51);
+    }
+
+    #logobox p{
+        margin:0.5em;
+    }
+
+    #logobox .navlogo{
+        width:40px;
+        height:40px;
+        float:left;
     }
 
     #content{

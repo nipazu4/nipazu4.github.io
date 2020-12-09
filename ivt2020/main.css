@@ -63,7 +63,7 @@ body{
 
 #card{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    width: 540px;
+    width: 800px;
     height: 95%;
     position:absolute;
     top:2.5%;
@@ -81,13 +81,29 @@ body{
     border-radius: 4px;
 }
 
+#card form{
+    background-color:  rgb(241, 205, 154);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
 #card form input{
+    margin-top: 5px;
     margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 #card form input[type=text]{
     width:100%;
-    height:25px;
+    height:30px;
     border-radius: 4px;
     border: 1px solid gray;
+}
+#card form input[type=submit]{
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin: 0;
+    margin-top: 5px;
 }

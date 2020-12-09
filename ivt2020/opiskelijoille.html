@@ -15,8 +15,8 @@
         <div id="content">
             <div id="card">
                 <p>Hei {nimi}! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
-                <div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div>
-                <button onclick="lataaCV()">Lataa CV</button>
+                <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+                <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="lataaCV()">Lataa CV</button>
             </div>
         </div>
     </body>
@@ -24,11 +24,17 @@
 
 <script>
     function lataaCV() {
-        var teksti = '<p>Hei {nimi}! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        var teksti = `
+            <p>Hei {nimi}! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
+            <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+            <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>`;
         document.getElementById("card").innerHTML = teksti;
     }
     function paivitaCV(){
-        var teksti = '<p>Hei {nimi}! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        var teksti = `
+            <p>Hei {nimi}! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
+            <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+            <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>`;
         document.getElementById("card").innerHTML = teksti;
     }
 </script>

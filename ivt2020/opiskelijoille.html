@@ -14,7 +14,7 @@
         </div>
         <div id="content">
             <div id="card">
-                <p>Tervetuloa! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
+                <p>Hei {nimi}! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
                 <div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div>
                 <button onclick="lataaCV()">Lataa CV</button>
             </div>
@@ -24,11 +24,11 @@
 
 <script>
     function lataaCV() {
-        var teksti = '<p>Tervetuloa! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        var teksti = '<p>Hei {nimi}! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
         document.getElementById("card").innerHTML = teksti;
     }
     function paivitaCV(){
-        var teksti = '<p>Tervetuloa! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        var teksti = '<p>Hei {nimi}! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
         document.getElementById("card").innerHTML = teksti;
     }
 </script>

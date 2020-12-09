@@ -14,9 +14,11 @@
         </div>
         <div id="content">
             <div id="card">
-                <p>Hei {nimi}! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
-                <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
-                <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="lataaCV()">Lataa CV</button>
+                <div style="width:50%;margin-right:10px;">
+                    <p>Hei {nimi}! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
+                    <div style="width:100%;background-color: rgb(241, 205, 154);text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+                    <button style="width:100%;height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="lataaCV()">Lataa CV</button>
+                </div>
             </div>
         </div>
     </body>
@@ -25,16 +27,30 @@
 <script>
     function lataaCV() {
         var teksti = `
-            <p>Hei {nimi}! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
-            <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
-            <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>`;
+            <div style="width:50%;margin-right:10px;">
+                <p>Hei {nimi}! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
+                <div style="width:100%;background-color: rgb(241, 205, 154);text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+                <button style="width:100%;height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>
+            </div>
+            <div style="width:50%;margin-left:10px;">
+                <p>CV:si näkyy alapuolella.</p>
+                <div style="width:100%; height:350px;background-color: rgb(241, 205, 154);border-radius:4px;"
+            </div>`;
         document.getElementById("card").innerHTML = teksti;
+        document.getElementById("card").style.flexDirection = "row";
     }
     function paivitaCV(){
         var teksti = `
-            <p>Hei {nimi}! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
-            <div style="width:100%;background-color:goldenrod;text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
-            <button style="height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>`;
+            <div style="width:50%;margin-right:10px;">
+                <p>Hei {nimi}! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p>
+                <div style="width:100%;background-color:rgb(241, 205, 154);text-align:center;height:40px;border-radius:4px 4px 0 0">Tiedosto laitetaan tähän</div>
+                <button style="width:100%;height:25px;border:1px solid gray;border-radius:0 0 4px 4px;" onclick="paivitaCV()">Päivitä CV</button>
+            </div>
+            <div style="width:50%;margin-left:10px;">
+                <p>CV:si näkyy alapuolella.</p>
+                <div style="width:100%; height:350px;background-color: rgb(241, 205, 154);border-radius:4px;"
+            </div>`;
         document.getElementById("card").innerHTML = teksti;
+        document.getElementById("card").style.flexDirection = "row";
     }
 </script>

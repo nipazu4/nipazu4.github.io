@@ -1,0 +1,93 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: rgb(76, 107, 148);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+#bar{
+    background-color: whitesmoke;
+    width:100%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#bar ul{
+    list-style-type: none;
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#bar ul li{
+    padding: 12px 0;
+    background-color: rgb(243, 220, 187);
+    position: relative;
+    display: inline;
+}
+
+#bar ul li:hover{
+    background-color: rgb(241, 205, 154);
+    transition: .2s;
+}
+
+#bar ul li:not(:nth-last-child(-n+2)):after{
+    content: "";
+    border-right: 1px solid black;
+    position: absolute;
+    top: 15%;
+    height: 70%;
+    right: 0;
+}
+
+#bar ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 12px 25px;
+}
+
+#content{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#card{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 540px;
+    height: 95%;
+    position:absolute;
+    top:2.5%;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    margin: auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+#card::-webkit-scrollbar{
+    border-radius: 4px;
+}
+
+#card form input{
+    margin-bottom: 15px;
+}
+
+#card form input[type=text]{
+    width:100%;
+    height:25px;
+    border-radius: 4px;
+    border: 1px solid gray;
+}

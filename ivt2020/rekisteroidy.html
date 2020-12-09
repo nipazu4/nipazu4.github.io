@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/ivt2020/main.css">
+    </head>
+    <body>
+        <div id="bar">
+            <ul>
+                <li><a href="index.html">Etusivulle</a></li>
+                <li><a href="opiskelijoille.html">Opiskelijoille</a></li>
+                <li><a href="tyonantajille.html">Työnantajille</a></li>
+                <li style="margin-left: auto"><a href="kirjautuminen.html">Kirjautuminen</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="card">
+                <h1>Rekisteröityminen</h1>
+                <form>
+                    <label for="button">Olen:</label><br>
+                    <input type="radio" id="opiskelija" name="valinta" value="opiskelija">
+                    <label for="opiskelija">Opiskelija</label>
+                    <input type="radio" id="tyonantaja" name="valinta" value="tyonantaja">
+                    <label for="tyonantaja">Työnantaja</label><br>
+
+                    <label>Nimi:</label>
+                    <input type="text">
+                    <label>Osoite:</label>
+                    <input type="text">
+                    <label>Yrityksen nimi: (vain työnantajat)</label>
+                    <input type="text">
+                    <label>Koulun nimi: (vain opiskelijat)</label>
+                    <input type="text">
+                    <label>Sähköposti:</label>
+                    <input type="text">
+                    <label>Salasana:</label>
+                    <input type="text">
+                    <input type="submit" value="Lähetä tiedot">
+                </form>
+                <p>Lähetettyäsi tiedot saat sähköpostiisi varmistuksen. Voit sen jälkeen kirjautua sisään. 
+                Siirry kirjautumissivulle <a href="kirjautuminen.html">tästä.</a></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/ivt2020/main.css">
+    </head>
+    <body>
+        <div id="bar">
+            <ul>
+                <li><a href="index.html">Etusivulle</a></li>
+                <li><a href="opiskelijoille.html">Opiskelijoille</a></li>
+                <li><a href="tyonantajille.html">Työnantajille</a></li>
+                <li style="margin-left: auto"><a href="kirjautuminen.html">Kirjautuminen</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="card">
+                <p>Tervetuloa! Valitse tiedosto ja lataa CV:si alla olevasta napista.</p>
+                <div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div>
+                <button onclick="lataaCV()">Lataa CV</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    function lataaCV() {
+        var teksti = '<p>Tervetuloa! CV:si on ladattu. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        document.getElementById("card").innerHTML = teksti;
+    }
+    function paivitaCV(){
+        var teksti = '<p>Tervetuloa! CV:si on päivitetty. Valitse tiedosto ja päivitä CV:si alla olevasta napista.</p><div style="width:100%;background-color:goldenrod;">Tiedosto laitetaan tähän</div><button onclick="paivitaCV()">Lataa CV</button>';
+        document.getElementById("card").innerHTML = teksti;
+    }
+</script>
